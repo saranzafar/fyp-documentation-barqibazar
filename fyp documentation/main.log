@@ -1,0 +1,676 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.1.15)  29 JAN 2026 16:06
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count194
+\Gm@cntv=\count195
+\c@Gm@tempcnt=\count196
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box50
+\beforetitleunit=\skip49
+\aftertitleunit=\skip50
+\ttl@plus=\dimen149
+\ttl@minus=\dimen150
+\ttl@toksa=\toks18
+\titlewidth=\dimen151
+\titlewidthlast=\dimen152
+\titlewidthfirst=\dimen153
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count197
+\float@exts=\toks19
+\float@box=\box51
+\@float@everytoks=\toks20
+\@floatcapt=\box52
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count198
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen154
+\ar@mcellbox=\box53
+\extrarowheight=\dimen155
+\NC@list=\toks21
+\extratabsurround=\skip51
+\backup@length=\skip52
+\ar@cellbox=\box54
+)
+\TX@col@width=\dimen156
+\TX@old@table=\dimen157
+\TX@old@col=\dimen158
+\TX@target=\dimen159
+\TX@delta=\dimen160
+\TX@cols=\count199
+\TX@ftn=\toks22
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip53
+\LTright=\skip54
+\LTpre=\skip55
+\LTpost=\skip56
+\LTchunksize=\count266
+\LTcapwidth=\dimen161
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@gbox=\box59
+\LT@cols=\count267
+\LT@rows=\count268
+\c@LT@tables=\count269
+\c@LT@chunks=\count270
+\LT@p@ftn=\toks23
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen162
+\lightrulewidth=\dimen163
+\cmidrulewidth=\dimen164
+\belowrulesep=\dimen165
+\belowbottomsep=\dimen166
+\aboverulesep=\dimen167
+\abovetopsep=\dimen168
+\cmidrulesep=\dimen169
+\cmidrulekern=\dimen170
+\defaultaddspace=\dimen171
+\@cmidla=\count271
+\@cmidlb=\count272
+\@aboverulesep=\dimen172
+\@belowrulesep=\dimen173
+\@thisruleclass=\count273
+\@lastruleclass=\count274
+\@thisrulewidth=\dimen174
+)
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip57
+\enit@outerparindent=\dimen175
+\enit@toks=\toks24
+\enit@inbox=\box60
+\enit@count@id=\count275
+\enitdp@description=\count276
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count277
+\l__pdf_internal_box=\box61
+)
+(./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 416.83289pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=416.83289pt
+* \textheight=700.50687pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count278
+\scratchdimen=\dimen176
+\scratchbox=\box62
+\nofMPsegments=\count279
+\nofMParguments=\count280
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count281
+\MPscratchDim=\dimen177
+\MPnumerator=\count282
+\makeMPintoPDFobject=\count283
+\everyMPtoPDFconversion=\toks26
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(./titlepage.tex
+<logo.png, id=1, 256.96pt x 256.96pt>
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 10.
+(pdftex.def)             Requested size: 113.81102pt x 113.81163pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 13.
+ [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.png>]) (./approval_
+certificate.tex) [1
+
+] (./declaration.tex) [2
+
+]
+(./acknowledgment.tex) [3
+
+] (./abstract.tex) [4
+
+] (./main.toc [5
+
+
+] [6] [7]
+[8])
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ [9] (./main.lof [10
+
+])
+\tf@lof=\write4
+\openout4 = `main.lof'.
+
+ [11] (./main.lot)
+\tf@lot=\write5
+\openout5 = `main.lot'.
+
+ [12
+
+] [1
+
+] (./chapters/chapter1.tex
+[2
+
+] [3] [4]
+<figures/waterfall.png, id=62, 271.0125pt x 190.91325pt>
+File: figures/waterfall.png Graphic file (type png)
+<use figures/waterfall.png>
+Package pdftex.def Info: figures/waterfall.png  used on input line 48.
+(pdftex.def)             Requested size: 333.46758pt x 234.91803pt.
+ [5 <./figures/waterfall.png>] [6]
+Overfull \hbox (1.3601pt too wide) in paragraph at lines 94--95
+[]\OT1/cmr/m/n/12 The POS must al-low store ad-min-is-tra-tors to man-age prod-
+uct data (add/update). 
+ []
+
+
+Overfull \hbox (35.99298pt too wide) in paragraph at lines 102--103
+[]\OT1/cmr/m/n/12 The plat-form must store pro-pos-als and main-tain sta-tus (s
+ub-mit-ted/approved/rejected). 
+ []
+
+[7]
+Underfull \hbox (badness 1874) in paragraph at lines 149--149
+[]|\OT1/cmr/m/n/12 Stock val-i-da-tion, rout-ing,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+[]|\OT1/cmr/m/n/12 Delivery As-sign-
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 149--149
+\OT1/cmr/m/n/12 con-trolled de-liv-ery as-sign-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+[]|\OT1/cmr/m/n/12 Limited stan-dard-iza-tion
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 149--149
+[]|\OT1/cmr/m/n/12 Franchise and city based
+ []
+
+) [8] [9
+
+] (./chapters/chapter2.tex [10
+
+] [11] [12] [13] [14] [15]) [16] [17
+
+]
+(./chapters/chapter3.tex
+<figures/usecase/usecase.png, id=104, 842.14626pt x 810.02625pt>
+File: figures/usecase/usecase.png Graphic file (type png)
+<use figures/usecase/usecase.png>
+Package pdftex.def Info: figures/usecase/usecase.png  used on input line 16.
+(pdftex.def)             Requested size: 416.83289pt x 400.93332pt.
+ [18
+
+]
+Overfull \hbox (0.88899pt too wide) in paragraph at lines 30--30
+[]|\OT1/cmr/bx/n/12 Postconditions|  
+ []
+
+[19 <./figures/usecase/usecase.png>]
+Overfull \hbox (0.88899pt too wide) in paragraph at lines 59--59
+[]|\OT1/cmr/bx/n/12 Postconditions|  
+ []
+
+[20]
+Overfull \hbox (0.88899pt too wide) in paragraph at lines 86--86
+[]|\OT1/cmr/bx/n/12 Postconditions|  
+ []
+
+
+Overfull \hbox (0.88899pt too wide) in paragraph at lines 113--113
+[]|\OT1/cmr/bx/n/12 Postconditions|  
+ []
+
+[21]
+Overfull \hbox (0.88899pt too wide) in paragraph at lines 140--140
+[]|\OT1/cmr/bx/n/12 Postconditions|  
+ []
+
+
+Overfull \hbox (0.88899pt too wide) in paragraph at lines 168--168
+[]|\OT1/cmr/bx/n/12 Postconditions|  
+ []
+
+[22]
+<figures/sd/login.png, id=122, 855.195pt x 910.40125pt>
+File: figures/sd/login.png Graphic file (type png)
+<use figures/sd/login.png>
+Package pdftex.def Info: figures/sd/login.png  used on input line 194.
+(pdftex.def)             Requested size: 416.83289pt x 443.73894pt.
+ [23]
+<figures/sd/pos-product-management.png, id=126, 760.8425pt x 781.92125pt>
+File: figures/sd/pos-product-management.png Graphic file (type png)
+<use figures/sd/pos-product-management.png>
+Package pdftex.def Info: figures/sd/pos-product-management.png  used on input l
+ine 202.
+(pdftex.def)             Requested size: 416.83289pt x 428.38765pt.
+ [24 <./figures/sd/login.png>]
+<figures/sd/sell-products.png, id=132, 744.7825pt x 825.0825pt>
+File: figures/sd/sell-products.png Graphic file (type png)
+<use figures/sd/sell-products.png>
+Package pdftex.def Info: figures/sd/sell-products.png  used on input line 210.
+(pdftex.def)             Requested size: 416.83289pt x 461.79126pt.
+ [25 <./figures/sd/pos-product-management.png>]
+<figures/sd/pos-logout.png, id=137, 699.61375pt x 589.20125pt>
+File: figures/sd/pos-logout.png Graphic file (type png)
+<use figures/sd/pos-logout.png>
+Package pdftex.def Info: figures/sd/pos-logout.png  used on input line 218.
+(pdftex.def)             Requested size: 416.83289pt x 351.05109pt.
+ [26 <./figures/sd/sell-products.png>]
+<figures/sd/product-proposal-submission.png, id=142, 838.13126pt x 664.4825pt>
+File: figures/sd/product-proposal-submission.png Graphic file (type png)
+<use figures/sd/product-proposal-submission.png>
+Package pdftex.def Info: figures/sd/product-proposal-submission.png  used on in
+put line 226.
+(pdftex.def)             Requested size: 416.83289pt x 330.46606pt.
+ [27 <./figures/sd/pos-logout.png>]
+<figures/sd/proposal-review.png, id=147, 892.33376pt x 810.02625pt>
+File: figures/sd/proposal-review.png Graphic file (type png)
+<use figures/sd/proposal-review.png>
+Package pdftex.def Info: figures/sd/proposal-review.png  used on input line 234
+.
+(pdftex.def)             Requested size: 416.83289pt x 378.3887pt.
+ [28 <./figures/sd/product-proposal-submission.png>]
+<figures/sd/place-order.png, id=152, 1010.77625pt x 810.02625pt>
+File: figures/sd/place-order.png Graphic file (type png)
+<use figures/sd/place-order.png>
+Package pdftex.def Info: figures/sd/place-order.png  used on input line 242.
+(pdftex.def)             Requested size: 416.83289pt x 334.05342pt.
+ [29 <./figures/sd/proposal-review.png>]
+<figures/sd/rider-bidding.png, id=157, 736.7525pt x 737.75626pt>
+File: figures/sd/rider-bidding.png Graphic file (type png)
+<use figures/sd/rider-bidding.png>
+Package pdftex.def Info: figures/sd/rider-bidding.png  used on input line 250.
+(pdftex.def)             Requested size: 416.83289pt x 417.39592pt.
+ [30 <./figures/sd/place-order.png>]
+<figures/sd/order-routing.png, id=163, 985.6825pt x 676.5275pt>
+File: figures/sd/order-routing.png Graphic file (type png)
+<use figures/sd/order-routing.png>
+Package pdftex.def Info: figures/sd/order-routing.png  used on input line 258.
+(pdftex.def)             Requested size: 416.83289pt x 286.10097pt.
+ [31 <./figures/sd/rider-bidding.png>]
+<figures/sd/order-tracking.png, id=168, 1008.76875pt x 665.48625pt>
+File: figures/sd/order-tracking.png Graphic file (type png)
+<use figures/sd/order-tracking.png>
+Package pdftex.def Info: figures/sd/order-tracking.png  used on input line 266.
+
+(pdftex.def)             Requested size: 416.83289pt x 274.98357pt.
+ [32 <./figures/sd/order-routing.png>]
+<figures/ad/login.png, id=173, 296.10625pt x 320.19624pt>
+File: figures/ad/login.png Graphic file (type png)
+<use figures/ad/login.png>
+Package pdftex.def Info: figures/ad/login.png  used on input line 277.
+(pdftex.def)             Requested size: 166.7306pt x 180.30048pt.
+ [33 <./figures/sd/order-tracking.png>]
+<figures/ad/franchise-cities.png, id=178, 357.335pt x 537.00626pt>
+File: figures/ad/franchise-cities.png Graphic file (type png)
+<use figures/ad/franchise-cities.png>
+Package pdftex.def Info: figures/ad/franchise-cities.png  used on input line 28
+5.
+(pdftex.def)             Requested size: 166.7306pt x 250.5657pt.
+<figures/ad/product-management.png, id=179, 426.59375pt x 585.18625pt>
+File: figures/ad/product-management.png Graphic file (type png)
+<use figures/ad/product-management.png>
+Package pdftex.def Info: figures/ad/product-management.png  used on input line 
+293.
+(pdftex.def)             Requested size: 166.7306pt x 228.72176pt.
+ [34 <./figures/ad/login.png> <./figures/ad/franchise-cities.png>]
+<figures/ad/sell-products.png, id=185, 293.095pt x 591.20876pt>
+File: figures/ad/sell-products.png Graphic file (type png)
+<use figures/ad/sell-products.png>
+Package pdftex.def Info: figures/ad/sell-products.png  used on input line 301.
+(pdftex.def)             Requested size: 166.7306pt x 336.3159pt.
+
+[35 <./figures/ad/product-management.png>]
+<figures/ad/proposal.png, id=190, 371.3875pt x 830.10126pt>
+File: figures/ad/proposal.png Graphic file (type png)
+<use figures/ad/proposal.png>
+Package pdftex.def Info: figures/ad/proposal.png  used on input line 309.
+(pdftex.def)             Requested size: 166.7306pt x 372.66814pt.
+ [36 <./figures/ad/sell-products.png>]
+<figures/ad/place-order.png, id=196, 263.98625pt x 591.20876pt>
+File: figures/ad/place-order.png Graphic file (type png)
+<use figures/ad/place-order.png>
+Package pdftex.def Info: figures/ad/place-order.png  used on input line 317.
+(pdftex.def)             Requested size: 166.7306pt x 373.40167pt.
+ [37 <./figures/ad/proposal.png>]
+<figures/ad/order-track.png, id=202, 421.575pt x 559.08875pt>
+File: figures/ad/order-track.png Graphic file (type png)
+<use figures/ad/order-track.png>
+Package pdftex.def Info: figures/ad/order-track.png  used on input line 325.
+(pdftex.def)             Requested size: 166.7306pt x 221.11488pt.
+ [38 <./figures/ad/place-order.png>]
+<figures/ad/rider.png, id=207, 356.33125pt x 1155.31625pt>
+File: figures/ad/rider.png Graphic file (type png)
+<use figures/ad/rider.png>
+Package pdftex.def Info: figures/ad/rider.png  used on input line 333.
+(pdftex.def)             Requested size: 166.7306pt x 540.58359pt.
+ [39 <./figures/ad/order-track.png>]
+<figures/ad/rider-management.png, id=212, 365.365pt x 537.00626pt>
+File: figures/ad/rider-management.png Graphic file (type png)
+<use figures/ad/rider-management.png>
+Package pdftex.def Info: figures/ad/rider-management.png  used on input line 34
+1.
+(pdftex.def)             Requested size: 166.7306pt x 245.0593pt.
+ [40 <./figures/ad/rider.png>]
+<figures/er/er.png, id=217, 1296.845pt x 951.555pt>
+File: figures/er/er.png Graphic file (type png)
+<use figures/er/er.png>
+Package pdftex.def Info: figures/er/er.png  used on input line 349.
+(pdftex.def)             Requested size: 416.83289pt x 305.85414pt.
+ [41 <./figures/ad/rider-management.png>] [42 <./figures/er/er.png>]
+<figures/workflow/workflow.png, id=227, 1541.76pt x 1027.84pt>
+File: figures/workflow/workflow.png Graphic file (type png)
+<use figures/workflow/workflow.png>
+Package pdftex.def Info: figures/workflow/workflow.png  used on input line 407.
+
+(pdftex.def)             Requested size: 416.83289pt x 277.88123pt.
+ [43]
+<figures/architecture/system-architecture.png, id=231, 1541.76pt x 918.43124pt>
+
+File: figures/architecture/system-architecture.png Graphic file (type png)
+<use figures/architecture/system-architecture.png>
+Package pdftex.def Info: figures/architecture/system-architecture.png  used on 
+input line 418.
+(pdftex.def)             Requested size: 416.83289pt x 248.30208pt.
+) [44 <./figures/workflow/workflow.png (PNG copy)> <./figures/architecture/syst
+em-architecture.png>]
+[45
+
+] (./chapters/chapter4.tex [46
+
+] [47]
+<figures/gantt-chart/gantt-chart.png, id=245, 859.2903pt x 399.6531pt>
+File: figures/gantt-chart/gantt-chart.png Graphic file (type png)
+<use figures/gantt-chart/gantt-chart.png>
+Package pdftex.def Info: figures/gantt-chart/gantt-chart.png  used on input lin
+e 63.
+(pdftex.def)             Requested size: 416.83289pt x 193.8681pt.
+ [48]) [49 <./figures/gantt-chart/gantt-chart.png>] [50
+
+] (./chapters/chapter5.tex [51
+
+]
+Overfull \hbox (2.15707pt too wide) in paragraph at lines 39--39
+|[]\OT1/cmr/bx/n/17.28 User In-ter-face Re-sults (Role Based Mod-ules)| 
+ []
+
+[52]
+<figures/ui/pos/dashboard.png, id=263, 1927.2pt x 1048.91875pt>
+File: figures/ui/pos/dashboard.png Graphic file (type png)
+<use figures/ui/pos/dashboard.png>
+Package pdftex.def Info: figures/ui/pos/dashboard.png  used on input line 52.
+(pdftex.def)             Requested size: 416.83289pt x 226.85756pt.
+<figures/ui/pos/list-product.png, id=264, 1927.2pt x 1048.91875pt>
+File: figures/ui/pos/list-product.png Graphic file (type png)
+<use figures/ui/pos/list-product.png>
+Package pdftex.def Info: figures/ui/pos/list-product.png  used on input line 62
+.
+(pdftex.def)             Requested size: 416.83289pt x 226.85756pt.
+ [53 <./figures/ui/pos/dashboard.png>]
+<figures/ui/pos/add-product.png, id=269, 1927.2pt x 922.44624pt>
+File: figures/ui/pos/add-product.png Graphic file (type png)
+<use figures/ui/pos/add-product.png>
+Package pdftex.def Info: figures/ui/pos/add-product.png  used on input line 72.
+
+(pdftex.def)             Requested size: 416.83289pt x 199.50441pt.
+ [54 <./figures/ui/pos/list-product.png> <./figures/ui/pos/add-product.png>]
+<figures/ui/franchises/admin-dashboard.png, id=276, 1927.2pt x 937.5025pt>
+File: figures/ui/franchises/admin-dashboard.png Graphic file (type png)
+<use figures/ui/franchises/admin-dashboard.png>
+Package pdftex.def Info: figures/ui/franchises/admin-dashboard.png  used on inp
+ut line 89.
+(pdftex.def)             Requested size: 416.83289pt x 202.76074pt.
+<figures/ui/franchises/add-franchise-by-admin.png, id=277, 1927.2pt x 937.5025p
+t>
+File: figures/ui/franchises/add-franchise-by-admin.png Graphic file (type png)
+<use figures/ui/franchises/add-franchise-by-admin.png>
+Package pdftex.def Info: figures/ui/franchises/add-franchise-by-admin.png  used
+ on input line 99.
+(pdftex.def)             Requested size: 416.83289pt x 202.76074pt.
+ [55 <./figures/ui/franchises/admin-dashboard.png>]
+<figures/ui/franchises/city-adding-by-admin.png, id=282, 1927.2pt x 937.5025pt>
+
+File: figures/ui/franchises/city-adding-by-admin.png Graphic file (type png)
+<use figures/ui/franchises/city-adding-by-admin.png>
+Package pdftex.def Info: figures/ui/franchises/city-adding-by-admin.png  used o
+n input line 109.
+(pdftex.def)             Requested size: 416.83289pt x 202.76074pt.
+ [56 <./figures/ui/franchises/add-franchise-by-admin.png> <./figures/ui/franchi
+ses/city-adding-by-admin.png>]
+<figures/ui/contract/contract-listing.png, id=288, 1927.2pt x 922.44624pt>
+File: figures/ui/contract/contract-listing.png Graphic file (type png)
+<use figures/ui/contract/contract-listing.png>
+Package pdftex.def Info: figures/ui/contract/contract-listing.png  used on inpu
+t line 126.
+(pdftex.def)             Requested size: 416.83289pt x 199.50441pt.
+<figures/ui/contract/approve-reject-proposal.png, id=289, 1927.2pt x 922.44624p
+t>
+File: figures/ui/contract/approve-reject-proposal.png Graphic file (type png)
+<use figures/ui/contract/approve-reject-proposal.png>
+Package pdftex.def Info: figures/ui/contract/approve-reject-proposal.png  used 
+on input line 136.
+(pdftex.def)             Requested size: 416.83289pt x 199.50441pt.
+ [57 <./figures/ui/contract/contract-listing.png>]
+<figures/ui/contract/add-contract.png, id=294, 1927.2pt x 922.44624pt>
+File: figures/ui/contract/add-contract.png Graphic file (type png)
+<use figures/ui/contract/add-contract.png>
+Package pdftex.def Info: figures/ui/contract/add-contract.png  used on input li
+ne 146.
+(pdftex.def)             Requested size: 416.83289pt x 199.50441pt.
+ [58 <./figures/ui/contract/approve-reject-proposal.png> <./figures/ui/contract
+/add-contract.png>]
+<figures/ui/order/Franchise-Admin-1.png, id=300, 1429.59094pt x 697.8572pt>
+File: figures/ui/order/Franchise-Admin-1.png Graphic file (type png)
+<use figures/ui/order/Franchise-Admin-1.png>
+Package pdftex.def Info: figures/ui/order/Franchise-Admin-1.png  used on input 
+line 163.
+(pdftex.def)             Requested size: 416.83289pt x 203.48083pt.
+<figures/ui/order/Store-Manager-1.png, id=301, 1432.60219pt x 711.4078pt>
+File: figures/ui/order/Store-Manager-1.png Graphic file (type png)
+<use figures/ui/order/Store-Manager-1.png>
+Package pdftex.def Info: figures/ui/order/Store-Manager-1.png  used on input li
+ne 173.
+(pdftex.def)             Requested size: 416.83289pt x 206.98685pt.
+ [59 <./figures/ui/order/Franchise-Admin-1.png>]
+<figures/ui/order/Store-Manager-4.png, id=306, 1434.86063pt x 709.14937pt>
+File: figures/ui/order/Store-Manager-4.png Graphic file (type png)
+<use figures/ui/order/Store-Manager-4.png>
+Package pdftex.def Info: figures/ui/order/Store-Manager-4.png  used on input li
+ne 183.
+(pdftex.def)             Requested size: 416.83289pt x 206.00513pt.
+[60 <./figures/ui/order/Store-Manager-1.png> <./figures/ui/order/Store-Manager-
+4.png>]) [61] [62
+
+] (./chapters/chapter6.tex [63
+
+] [64] [65] [66] [67]
+Underfull \hbox (badness 2103) in paragraph at lines 217--217
+[]|\OT1/cmr/m/n/12 Open City Man-age-ment $\OMS/cmsy/m/n/12 !$ \OT1/cmr/m/n/12 
+Se-lect fran-chise $\OMS/cmsy/m/n/12 !$
+ []
+
+[68] [69]) [70] [71] [72
+
+] (./chapters/chapter7.tex [73
+
+]) (./main.bbl [74])
+[75
+
+] (./main.aux) ) 
+Here is how much of TeX's memory you used:
+ 3715 strings out of 478287
+ 63882 string characters out of 5849289
+ 370931 words of memory out of 5000000
+ 21805 multiletter control sequences out of 15000+600000
+ 474803 words of font info for 46 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,11n,62p,912b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (88 pages, 4689753 bytes).
+PDF statistics:
+ 390 PDF objects out of 1000 (max. 8388607)
+ 213 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
+

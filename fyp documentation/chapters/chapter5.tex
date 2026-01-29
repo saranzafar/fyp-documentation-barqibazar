@@ -1,0 +1,204 @@
+\label{ch:implementation}
+
+\section{Chapter Overview}
+This chapter presents the implementation details of the \textbf{Barqi Bazar} system. It explains the development environment, system architecture implementation, authentication mechanism, and the realized user interfaces. The chapter focuses on how core modules such as POS, Franchise Management, Contract Management, and Order Processing were implemented and integrated. Visual evidence of the implemented system is provided through user interface screenshots in later sections.
+
+\section{Implementation Environment}
+Barqi Bazar is implemented as a web based, service oriented system. The backend services are developed using modern API driven architecture, while the frontend interfaces are designed to be responsive and role oriented. The implementation environment consists of the following components:
+
+\begin{itemize}
+	\item Backend developed using API based services
+	\item Frontend developed using HTML, CSS, JavaScript, and Bootstrap
+	\item Relational database for persistent data storage
+	\item RESTful APIs for communication between frontend and backend
+\end{itemize}
+
+This environment ensures scalability, maintainability, and clear separation between presentation and business logic.
+
+\section{System Architecture Implementation}
+\subsection{Project Structure and Modularity}
+The Barqi Bazar system follows a modular and service oriented design. Each major business domain is implemented as a separate module, including POS operations, franchise management, order handling, and contract management. This separation allows independent development and testing while maintaining seamless integration through APIs.
+
+\subsection{Database Layer}
+The database layer is designed using a relational schema that supports core entities such as users, products, orders, franchises, riders, and contracts. Relationships between entities ensure data integrity and support real world workflows such as order placement, product proposals, rider assignment, and franchise level control.
+
+\section{Authentication and Role Based Access Control}
+Authentication is enforced across the system to ensure secure access. Users must log in before accessing any protected functionality. After authentication, the system determines the user role and grants access accordingly.
+
+The system supports the following roles:
+\begin{itemize}
+	\item Super Admin
+	\item Franchise Admin
+	\item Store Admin
+	\item Customer
+	\item Rider
+\end{itemize}
+
+Each role is restricted to specific modules and operations, ensuring controlled access and secure governance.
+
+\section{User Interface Results (Role Based Modules)}
+This section presents the implemented user interfaces of Barqi Bazar. Screenshots are grouped by functional modules to clearly demonstrate system capabilities.
+
+\subsection{Point of Sale (POS) Module}
+The Point of Sale (POS) module is a core operational component of the Barqi Bazar system. It enables Store Admins to manage in store product sales, monitor inventory availability, and perform real time transaction processing. This module ensures that physical store operations remain synchronized with the central system and online marketplace.
+
+The POS interface provides a structured dashboard where store administrators can quickly access product listings, initiate sales, and manage daily operations efficiently.
+
+\subsubsection{POS Dashboard}
+The POS dashboard serves as the main entry point for store level operations. It displays key operational data such as available products, pricing, and action controls for sales and inventory management.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/ui/pos/dashboard.png}
+	\caption{POS dashboard showing overview of products and operational controls.}
+	\label{fig:pos_dashboard}
+\end{figure}
+
+\subsubsection{Product Listing and Management}
+The product listing screen allows Store Admins to view all available products along with their prices, stock status, and availability indicators. This screen supports quick decision making during sales operations.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/ui/pos/list-product.png}
+	\caption{POS product listing screen displaying available products and stock status.}
+	\label{fig:pos_product_list}
+\end{figure}
+
+\subsubsection{Add Product Interface}
+The add product interface allows Store Admins to register new products into the POS system. Essential details such as product name, category, price, and initial stock quantity are captured to ensure accurate inventory tracking.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/ui/pos/add-product.png}
+	\caption{POS add product interface used to register new products into the system.}
+	\label{fig:pos_add_product}
+\end{figure}
+
+The POS module ensures seamless integration between sales operations and inventory updates. Each completed transaction automatically reflects stock changes, maintaining data consistency across the system.
+
+\subsection{Franchise Management Module}
+The Franchise Management module is a core administrative component of the Barqi Bazar system. It enables Super Admins and Franchise Admins to manage franchise records, assign operational regions, and control franchise level activities. This module ensures organized expansion, regional governance, and centralized oversight of franchise operations.
+
+The franchise management interface provides a structured dashboard through which administrators can monitor existing franchises, add new franchises, and manage city level assignments efficiently.
+
+\subsubsection{Franchise Dashboard}
+The franchise dashboard serves as the primary control panel for franchise related operations. It displays a list of registered franchises along with their operational status and management actions, enabling administrators to oversee system wide franchise activities.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/ui/franchises/admin-dashboard.png}
+	\caption{Franchise dashboard displaying registered franchises and management controls.}
+	\label{fig:franchise_dashboard}
+\end{figure}
+
+\subsubsection{Add Franchise Interface}
+The add franchise interface allows Super Admins to register new franchises into the system. Key information such as franchise name, administrative credentials, and operational settings are captured to ensure proper onboarding and access control.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/ui/franchises/add-franchise-by-admin.png}
+	\caption{Add franchise interface used to register a new franchise in the system.}
+	\label{fig:franchise_add}
+\end{figure}
+
+\subsubsection{City Assignment and Management}
+The city management interface allows administrators to assign cities to franchises, enabling controlled regional expansion. This functionality ensures that each franchise operates within its designated geographical boundaries.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/ui/franchises/city-adding-by-admin.png}
+	\caption{City assignment interface for managing franchise operational regions.}
+	\label{fig:franchise_city}
+\end{figure}
+
+The Franchise Management module plays a critical role in maintaining structured growth and operational consistency across regions. By centralizing franchise and city level controls, the system ensures scalability, governance, and administrative efficiency.
+
+\subsection{Contract Management Module}
+The Contract Management module is responsible for handling formal agreements between franchises, stores, and the Barqi Bazar platform. It facilitates contract creation, proposal review, approval workflows, and status tracking to ensure transparency, accountability, and operational compliance across the system.
+
+The module provides administrators with centralized access to all contracts and proposals, enabling efficient monitoring and decision making.
+
+\subsubsection{Contract Listing Dashboard}
+The contract listing dashboard provides an overview of all active, pending, and completed contracts within the system. Administrators can review contract details, monitor statuses, and track contractual relationships between different entities.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/ui/contract/contract-listing.png}
+	\caption{Contract listing dashboard showing active and pending contracts.}
+	\label{fig:contract_listing}
+\end{figure}
+
+\subsubsection{Proposal Review and Approval}
+The proposal management interface allows administrators to review contract proposals submitted by franchises or stores. From this interface, proposals can be approved or rejected based on predefined business rules, ensuring controlled and auditable contract approval processes.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/ui/contract/approve-reject-proposal.png}
+	\caption{Proposal review interface for approving or rejecting contract proposals.}
+	\label{fig:contract_approval}
+\end{figure}
+
+\subsubsection{Add Contract Interface}
+The add contract interface enables administrators to create new contracts by defining contract terms, associated parties, and validity details. This ensures that all contractual agreements are formally recorded and managed within the system.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/ui/contract/add-contract.png}
+	\caption{Add contract interface used to register new contractual agreements.}
+	\label{fig:contract_add}
+\end{figure}
+
+The Contract Management module ensures structured agreement handling and reduces manual dependency by digitizing contract workflows. By integrating proposal review, approval, and contract tracking, the system maintains consistency and legal clarity across all operational entities.
+
+\subsection{Order Management Module}
+The Order Management module handles the complete lifecycle of orders within the Barqi Bazar system. It enables customers to place orders, allows store managers to process and prepare orders, and provides franchise administrators with centralized monitoring and control over order activities.
+
+This module integrates order placement, status updates, and operational tracking to ensure smooth coordination between customers, stores, and administrative roles.
+
+\subsubsection{Order Monitoring Dashboard}
+The order monitoring dashboard provides franchise administrators with a comprehensive view of all orders across stores. It displays order details, current status, and associated actions, enabling effective oversight and decision making.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/ui/order/Franchise-Admin-1.png}
+	\caption{Order monitoring dashboard for franchise administrators showing order status and details.}
+	\label{fig:order_dashboard}
+\end{figure}
+
+\subsubsection{Store Order Processing Interface}
+The store order processing interface is used by Store Managers to manage incoming orders. It allows store level staff to view order details, update preparation status, and coordinate order fulfillment efficiently.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/ui/order/Store-Manager-1.png}
+	\caption{Store manager interface for processing and managing customer orders.}
+	\label{fig:store_order_processing}
+\end{figure}
+
+\subsubsection{Order Details and Status Management}
+The order details interface provides a detailed view of individual orders, including items, quantities, and current status. This screen supports status updates throughout the order lifecycle, ensuring transparency and real time tracking across the system.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/ui/order/Store-Manager-4.png}
+	\caption{Order details interface showing order information and status management options.}
+	\label{fig:order_details}
+\end{figure}
+
+The Order Management module ensures seamless coordination between ordering and fulfillment processes. By centralizing order monitoring and enabling role based interactions, the system improves operational efficiency and enhances overall service reliability.
+
+\section{Functional Results Summary}
+Based on the implemented modules and interfaces, the Barqi Bazar system demonstrates the following outcomes:
+
+\begin{itemize}
+	\item Successful implementation of role based authentication and authorization
+	\item Fully functional POS system for in store operations
+	\item Centralized franchise and contract management
+	\item End to end order processing, from placement to delivery
+\end{itemize}
+
+\section{Testing and Validation}
+Functional testing was conducted by executing real workflows such as logging in with different roles, managing products through POS, creating and reviewing contracts, placing orders, and tracking delivery status. Each module was tested independently and in integrated scenarios to ensure consistency and correctness.
+
+\section{Conclusion}
+This chapter detailed the implementation of the Barqi Bazar system and demonstrated its operational capabilities through implemented modules and user interfaces. The presented results confirm that the system meets its functional requirements and provides a solid foundation for scalable, service oriented digital commerce operations.

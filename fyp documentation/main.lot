@@ -1,0 +1,18 @@
+\contentsline {table}{\numberline {1.1}{\ignorespaces Comparison of Existing Systems with Proposed System}}{8}{}%
+\contentsline {table}{\numberline {3.2}{Use Case Description for Login}}{19}{}%
+\contentsline {table}{\numberline {3.3}{Use Case Description for Manage Product Data}}{20}{}%
+\contentsline {table}{\numberline {3.4}{Use Case Description for Submit Product Proposal}}{21}{}%
+\contentsline {table}{\numberline {3.5}{Use Case Description for Review Product Proposal}}{21}{}%
+\contentsline {table}{\numberline {3.6}{Use Case Description for Place Order}}{22}{}%
+\contentsline {table}{\numberline {3.7}{Use Case Description for Rider Bidding}}{22}{}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Work Breakdown Structure for Barqi Bazar}}{48}{}%
+\contentsline {table}{\numberline {6.9}{\ignorespaces Test Case TC-01: Login (Valid Credentials)}}{66}{}%
+\contentsline {table}{\numberline {6.10}{\ignorespaces Test Case TC-02: Login (Invalid Credentials)}}{66}{}%
+\contentsline {table}{\numberline {6.11}{\ignorespaces Test Case TC-03: POS Product Listing}}{67}{}%
+\contentsline {table}{\numberline {6.12}{\ignorespaces Test Case TC-04: POS Add Product}}{67}{}%
+\contentsline {table}{\numberline {6.13}{\ignorespaces Test Case TC-05: POS Sale Transaction}}{68}{}%
+\contentsline {table}{\numberline {6.14}{\ignorespaces Test Case TC-06: Add Franchise}}{68}{}%
+\contentsline {table}{\numberline {6.15}{\ignorespaces Test Case TC-07: City Assignment to Franchise}}{69}{}%
+\contentsline {table}{\numberline {6.16}{\ignorespaces Test Case TC-08: Add Contract}}{69}{}%
+\contentsline {table}{\numberline {6.17}{\ignorespaces Test Case TC-09: Approve/Reject Contract Proposal}}{70}{}%
+\contentsline {table}{\numberline {6.18}{\ignorespaces Test Case TC-10: Order Status Update and Tracking}}{70}{}%

@@ -1,0 +1,37 @@
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Waterfall model}}{5}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Use Case Diagram}}{19}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Sequence Diagram for login}}{24}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces POS Product Management Sequence Diagram}}{25}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces POS Sell Product Sequence Diagram}}{26}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Sequence Diagram for logout}}{27}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Product Proposal Submission Sequence Diagram}}{28}{}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Product Proposal Review and Approval Sequence Diagram}}{29}{}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Customer Place Order Sequence Diagram}}{30}{}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Rider Bidding Sequence Diagram}}{31}{}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Order Routing and Delivery Assignment Sequence Diagram}}{32}{}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Order Tracking Sequence Diagram}}{33}{}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Activity Diagram for login}}{34}{}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Franchise Cities Management Activity Diagram}}{34}{}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Product Management Activity Diagram}}{35}{}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Sell Product Activity Diagram}}{36}{}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Product Proposal Activity Diagram}}{37}{}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Customer Place Order Activity Diagram}}{38}{}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Order Tracking Activity Diagram}}{39}{}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Rider Activity Diagram}}{40}{}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Rider Management Activity Diagram}}{41}{}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Activity Diagram for ER Diagram}}{42}{}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces System Workflow Diagram}}{44}{}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces System Architecture Diagram}}{44}{}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Gantt Chart for Barqi Bazar System}}{49}{}%
+\contentsline {figure}{\numberline {5.26}{\ignorespaces POS dashboard showing overview of products and operational controls.}}{53}{}%
+\contentsline {figure}{\numberline {5.27}{\ignorespaces POS product listing screen displaying available products and stock status.}}{54}{}%
+\contentsline {figure}{\numberline {5.28}{\ignorespaces POS add product interface used to register new products into the system.}}{54}{}%
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Franchise dashboard displaying registered franchises and management controls.}}{55}{}%
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Add franchise interface used to register a new franchise in the system.}}{56}{}%
+\contentsline {figure}{\numberline {5.31}{\ignorespaces City assignment interface for managing franchise operational regions.}}{56}{}%
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Contract listing dashboard showing active and pending contracts.}}{57}{}%
+\contentsline {figure}{\numberline {5.33}{\ignorespaces Proposal review interface for approving or rejecting contract proposals.}}{58}{}%
+\contentsline {figure}{\numberline {5.34}{\ignorespaces Add contract interface used to register new contractual agreements.}}{58}{}%
+\contentsline {figure}{\numberline {5.35}{\ignorespaces Order monitoring dashboard for franchise administrators showing order status and details.}}{59}{}%
+\contentsline {figure}{\numberline {5.36}{\ignorespaces Store manager interface for processing and managing customer orders.}}{60}{}%
+\contentsline {figure}{\numberline {5.37}{\ignorespaces Order details interface showing order information and status management options.}}{60}{}%

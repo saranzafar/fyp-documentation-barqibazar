@@ -1,0 +1,280 @@
+\label{ch:testing}
+
+\section{Introduction}
+Software testing ensures that the Barqi Bazar platform functions accurately, securely, and reliably.
+Since the system includes multiple administrative modules (Point of Sale, Franchise Management,
+Contract Management, and Order Management) along with role based access control, thorough testing
+is required to verify correct behavior across all workflows.
+
+This chapter describes the testing objectives, testing environment, and testing methods applied
+to validate key operations such as authentication, POS sales, franchise/city management,
+contract proposal handling, and order processing. It also presents executed test cases and results,
+confirming that the system is stable and ready for deployment.
+
+\section{Testing Objectives}
+The goal of testing in Barqi Bazar is to ensure that all modules function correctly, reliably,
+and securely under normal and edge case conditions. Testing was performed to verify system
+workflows from admin side configuration to operational execution.
+
+Key objectives include:
+\begin{itemize}
+	\item \textbf{Functional Verification:} Confirm each module works as intended (POS, Franchise, Contract, Orders).
+	\item \textbf{Integration Validation:} Ensure smooth interaction between frontend dashboards, backend APIs, and database.
+	\item \textbf{Data Accuracy:} Maintain consistency across all CRUD operations and transactional updates.
+	\item \textbf{Performance Testing:} Validate responsiveness for listing screens and high activity actions (order updates, product search).
+	\item \textbf{Security Enforcement:} Verify permission based access and restricted operations for different roles.
+	\item \textbf{UI/UX Validation:} Ensure screens are usable, clear, and role appropriate for administrators and managers.
+	\item \textbf{Error Handling:} Confirm validation and failure messages appear correctly for invalid inputs.
+	\item \textbf{Deployment Readiness:} Confirm platform stability for real operational use.
+\end{itemize}
+
+\section{Testing Environment}
+\subsection{Hardware Environment}
+\begin{itemize}
+	\item Laptop/PC with at least 8GB RAM and Intel i5 (or equivalent).
+	\item Stable internet connection for API requests and database connectivity.
+\end{itemize}
+
+\subsection{Software Environment}
+\begin{itemize}
+	\item \textbf{Frontend:} React.js (Admin/Store dashboards), Tailwind CSS.
+	\item \textbf{Backend:} REST APIs (project backend services).
+	\item \textbf{Database:} PostgreSQL (core data storage).
+	\item \textbf{Testing Tools:} Postman (API testing), Browser DevTools (UI/network debugging), pgAdmin/DBeaver (database verification).
+\end{itemize}
+
+\subsection{Test Data Environment}
+\begin{itemize}
+	\item Sample accounts for Super Admin, Franchise Admin, and Store Manager roles.
+	\item Sample products, inventory records, and categories for POS testing.
+	\item Sample franchises and cities for management workflows.
+	\item Sample contract proposals and contract records for approval testing.
+	\item Sample orders with different statuses for order lifecycle validation.
+\end{itemize}
+
+\section{Types of Testing}
+\subsection{Unit Testing}
+Unit testing was applied to validate individual components in isolation such as:
+API endpoints, form validations, and core business rule functions (e.g., stock deduction, status transitions).
+
+\subsection{Integration Testing}
+Integration testing validated communication between:
+\begin{itemize}
+	\item Frontend dashboard actions and backend APIs
+	\item Backend services and PostgreSQL persistence
+	\item Multi module dependencies (e.g., POS sale updates inventory; order status updates affect tracking views)
+\end{itemize}
+
+\subsection{Functional Testing}
+Functional testing verified complete feature workflows such as:
+\begin{itemize}
+	\item Authentication and role based dashboard access
+	\item POS product listing, adding products, and sales execution
+	\item Franchise creation and city assignment
+	\item Contract creation, proposal listing, and approval/rejection
+	\item Order listing, order status updates, and operational tracking
+\end{itemize}
+
+\subsection{System Testing}
+System testing validated end to end behavior across modules to ensure:
+workflow completeness, correct permissions, UI consistency, and stable database state.
+
+\subsection{Performance Testing}
+Performance testing focused on:
+\begin{itemize}
+	\item Page load time for listing dashboards (products, orders, contracts)
+	\item API response time for search/filter operations
+	\item Stability under repeated operations (bulk order updates, repeated product actions)
+\end{itemize}
+
+\subsection{Security Testing}
+Security testing validated:
+\begin{itemize}
+	\item Authentication/session handling
+	\item Role based access restrictions (admin only actions blocked for store managers)
+	\item Input validation to prevent invalid or harmful requests
+\end{itemize}
+
+\subsection{User Acceptance Testing (UAT)}
+UAT ensured real users could operate the system reliably:
+navigation clarity, correct module behavior, and predictable outcomes for day to day store operations.
+
+\section{Test Cases}
+This section presents key test cases executed to validate Barqi Bazar core workflows including authentication,
+POS operations, franchise governance, contract processing, and order lifecycle management.
+Each test case outlines the objective, steps, expected result, and outcome.
+
+% -------------------------
+% Helper style: simple two-column table
+% -------------------------
+
+\subsection{Login Test Case (Valid Credentials)}
+\begin{table}[H]
+	\centering
+	\caption{Test Case TC-01: Login (Valid Credentials)}
+	\label{tab:tc_login_valid}
+	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+		\hline
+		\textbf{Test Case ID} & TC-01 \\ \hline
+		\textbf{Brief Description} & Login using valid credentials and redirect user to the correct role based dashboard. \\ \hline
+		\textbf{Precondition} & User account exists and is active in the system. \\ \hline
+		\textbf{Steps} & Enter valid email/username and password $\rightarrow$ Click Login. \\ \hline
+		\textbf{Expected Result} & Login successful and user redirected to role based dashboard (Super Admin / Franchise Admin / Store Manager). \\ \hline
+		\textbf{Status} & Pass \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsection{Login Test Case (Invalid Credentials)}
+\begin{table}[H]
+	\centering
+	\caption{Test Case TC-02: Login (Invalid Credentials)}
+	\label{tab:tc_login_invalid}
+	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+		\hline
+		\textbf{Test Case ID} & TC-02 \\ \hline
+		\textbf{Brief Description} & Validate login failure when incorrect credentials are entered. \\ \hline
+		\textbf{Precondition} & Login screen is accessible. \\ \hline
+		\textbf{Steps} & Enter incorrect email/password $\rightarrow$ Click Login. \\ \hline
+		\textbf{Expected Result} & Error message shown and user remains on login screen. \\ \hline
+		\textbf{Status} & Pass \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsection{POS Product Listing Test Case}
+\begin{table}[H]
+	\centering
+	\caption{Test Case TC-03: POS Product Listing}
+	\label{tab:tc_pos_list}
+	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+		\hline
+		\textbf{Test Case ID} & TC-03 \\ \hline
+		\textbf{Brief Description} & Verify POS product listing loads correctly with price and stock status. \\ \hline
+		\textbf{Precondition} & Products exist in database; POS user is logged in. \\ \hline
+		\textbf{Steps} & Open POS Dashboard $\rightarrow$ Navigate to Product Listing. \\ \hline
+		\textbf{Expected Result} & Product list loads successfully; each item shows price and availability/stock status. \\ \hline
+		\textbf{Status} & Pass \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsection{POS Add Product Test Case}
+\begin{table}[H]
+	\centering
+	\caption{Test Case TC-04: POS Add Product}
+	\label{tab:tc_pos_add}
+	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+		\hline
+		\textbf{Test Case ID} & TC-04 \\ \hline
+		\textbf{Brief Description} & Validate adding a new product through POS add product interface. \\ \hline
+		\textbf{Precondition} & POS user has permission to add products; required fields are known. \\ \hline
+		\textbf{Steps} & Open Add Product $\rightarrow$ Enter product details $\rightarrow$ Submit. \\ \hline
+		\textbf{Expected Result} & Product is created successfully and visible in product listing. \\ \hline
+		\textbf{Status} & Pass \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsection{POS Sale Transaction Test Case}
+\begin{table}[H]
+	\centering
+	\caption{Test Case TC-05: POS Sale Transaction}
+	\label{tab:tc_pos_sale}
+	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+		\hline
+		\textbf{Test Case ID} & TC-05 \\ \hline
+		\textbf{Brief Description} & Validate that a sale transaction completes and updates inventory correctly. \\ \hline
+		\textbf{Precondition} & Product stock is available; POS user is logged in. \\ \hline
+		\textbf{Steps} & Select product $\rightarrow$ Add to sale $\rightarrow$ Confirm transaction. \\ \hline
+		\textbf{Expected Result} & Sale is recorded successfully and product stock quantity is reduced accordingly. \\ \hline
+		\textbf{Status} & Pass \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsection{Franchise Creation Test Case}
+\begin{table}[H]
+	\centering
+	\caption{Test Case TC-06: Add Franchise}
+	\label{tab:tc_franchise_add}
+	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+		\hline
+		\textbf{Test Case ID} & TC-06 \\ \hline
+		\textbf{Brief Description} & Verify that Super Admin can create a new franchise successfully. \\ \hline
+		\textbf{Precondition} & Admin account is logged in; required fields are available. \\ \hline
+		\textbf{Steps} & Open Franchise Module $\rightarrow$ Add Franchise $\rightarrow$ Enter details $\rightarrow$ Save. \\ \hline
+		\textbf{Expected Result} & Franchise is created and appears in franchise dashboard list. \\ \hline
+		\textbf{Status} & Pass \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsection{City Assignment Test Case}
+\begin{table}[H]
+	\centering
+	\caption{Test Case TC-07: City Assignment to Franchise}
+	\label{tab:tc_city_assign}
+	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+		\hline
+		\textbf{Test Case ID} & TC-07 \\ \hline
+		\textbf{Brief Description} & Validate that a city can be assigned to a franchise for controlled regional operations. \\ \hline
+		\textbf{Precondition} & Franchise exists; Admin has permissions. \\ \hline
+		\textbf{Steps} & Open City Management $\rightarrow$ Select franchise $\rightarrow$ Add/Assign city $\rightarrow$ Save. \\ \hline
+		\textbf{Expected Result} & City is linked to the franchise and appears in assigned region list. \\ \hline
+		\textbf{Status} & Pass \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsection{Contract Creation Test Case}
+\begin{table}[H]
+	\centering
+	\caption{Test Case TC-08: Add Contract}
+	\label{tab:tc_contract_add}
+	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+		\hline
+		\textbf{Test Case ID} & TC-08 \\ \hline
+		\textbf{Brief Description} & Validate creation of a new contract between platform and franchise/store. \\ \hline
+		\textbf{Precondition} & Admin account logged in; related franchise/store exists. \\ \hline
+		\textbf{Steps} & Open Contract Module $\rightarrow$ Add Contract $\rightarrow$ Enter terms/details $\rightarrow$ Save. \\ \hline
+		\textbf{Expected Result} & Contract is created and visible in contract listing dashboard. \\ \hline
+		\textbf{Status} & Pass \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsection{Contract Proposal Approval/Rejection Test Case}
+\begin{table}[H]
+	\centering
+	\caption{Test Case TC-09: Approve/Reject Contract Proposal}
+	\label{tab:tc_contract_approve}
+	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+		\hline
+		\textbf{Test Case ID} & TC-09 \\ \hline
+		\textbf{Brief Description} & Verify admin can approve or reject a submitted contract proposal and status is updated. \\ \hline
+		\textbf{Precondition} & Proposal exists in proposals list; Admin is logged in. \\ \hline
+		\textbf{Steps} & Open Proposals $\rightarrow$ Select proposal $\rightarrow$ Click Approve/Reject. \\ \hline
+		\textbf{Expected Result} & Proposal status changes accordingly and reflects in proposal/contract listing. \\ \hline
+		\textbf{Status} & Pass \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsection{Order Status Update and Tracking Test Case}
+\begin{table}[H]
+	\centering
+	\caption{Test Case TC-10: Order Status Update and Tracking}
+	\label{tab:tc_order_tracking}
+	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+		\hline
+		\textbf{Test Case ID} & TC-10 \\ \hline
+		\textbf{Brief Description} & Validate order lifecycle updates and visibility in order management dashboards. \\ \hline
+		\textbf{Precondition} & Order exists in system; authorized role (Store Manager/Franchise Admin) is logged in. \\ \hline
+		\textbf{Steps} & Open Orders $\rightarrow$ Select order $\rightarrow$ Update status (e.g., Pending $\rightarrow$ Processing $\rightarrow$ Completed). \\ \hline
+		\textbf{Expected Result} & Status updates are saved and reflected in the order listing and order details view. \\ \hline
+		\textbf{Status} & Pass \\ \hline
+	\end{tabular}
+\end{table}
+
+\section{Summary}
+This chapter presented the software testing process carried out for the Barqi Bazar platform.
+Testing techniques including unit testing, integration testing, functional testing, performance testing,
+security testing, and user acceptance testing were applied to validate the correctness and stability of
+all major workflows.
+
+The executed test cases confirmed that authentication, POS operations, franchise governance,
+contract management, and order lifecycle handling function as expected. The results demonstrate that
+the system maintains data accuracy, enforces role based security, and remains stable under normal
+operational use. Overall, the testing phase confirms that Barqi Bazar is ready for deployment.

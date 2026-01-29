@@ -1,0 +1,195 @@
+\section{Introduction}
+
+\subsection{Purpose}
+The purpose of this Software Requirements Specification (SRS) document is to provide a detailed and structured description of the requirements for the Barqi Bazar system. Barqi Bazar is a service oriented smart commerce platform designed to integrate offline Point of Sale (POS) operations with an online marketplace and delivery coordination system. This document serves as a reference for system designers, developers, testers, and stakeholders to understand the functional and non functional requirements of the system before implementation.
+
+\subsection{Intended Audience and Reading Suggestions}
+This document is intended for:
+\begin{itemize}
+	\item Software developers responsible for implementing the system.
+	\item Project supervisors and evaluators reviewing the system design.
+	\item Testers responsible for validating system functionality.
+	\item Stakeholders involved in retail, franchise, and delivery operations.
+\end{itemize}
+Readers are advised to read the document sequentially, starting from the overall description to system features and non functional requirements, to gain a complete understanding of the system.
+
+\subsection{Project Scope}
+Barqi Bazar aims to provide a unified platform that connects physical retail stores with online customers and delivery riders. The system supports offline POS operations, controlled product publishing through franchise approval, customer order placement, stock validation, rider bidding, and order routing. The platform also supports franchise and city based management to enable scalable operations across multiple regions.
+
+\section{Overall Description}
+
+\subsection{Product Perspective}
+Barqi Bazar is an independent software product designed to operate as a centralized platform integrating multiple functional components. These components include a POS system for store operations, web based portals for store and franchise administrators, a customer ordering interface, and a delivery coordination layer for riders. Each component performs specific responsibilities while interacting with others through well defined service interfaces.
+
+\subsection{User Classes and Characteristics}
+The system will be used by the following user classes:
+\begin{itemize}
+	\item \textbf{Super Admin:} Responsible for overall system administration, configuration management, and high level monitoring. The Super Admin manages global settings, oversees platform operations, and ensures system stability and compliance.
+	\item \textbf{Store Admin:} Manages store level operations, including product management, sales processing through the POS system, and submission of product proposals for online publishing.
+	\item \textbf{Franchise Admin:} Reviews and approves or rejects product proposals, manages franchises and cities, and oversees operational control across multiple stores within assigned regions.
+	\item \textbf{Customer:} Places orders through the platform, views available products, and tracks order status.
+	\item \textbf{Rider:} Participates in delivery bidding, accepts assigned delivery jobs, and completes order deliveries.
+\end{itemize}
+
+\subsection{Product Functions}
+The major functions of Barqi Bazar include:
+\begin{itemize}
+	\item Offline capable POS operations for product management and sales.
+	\item Product proposal submission and approval workflow.
+	\item Online product publishing after approval.
+	\item Customer order placement and stock validation.
+	\item Rider bidding and delivery assignment.
+	\item Franchise and city based operational management.
+\end{itemize}
+
+\subsection{Operating Environment}
+Barqi Bazar operates on modern web browsers and POS devices. The POS system supports offline usage, while administrative portals and customer interfaces operate over the web. The backend platform runs on a server environment with a centralized database storing user, product, order, proposal, and delivery data.
+
+\subsection{Design}
+The system is designed using a \textbf{service oriented architecture}, where system responsibilities are divided into logical services such as POS operations, catalog management, order processing, and delivery coordination. This design supports modularity, maintainability, and scalability without exposing internal implementation details.
+
+\subsection{Assumptions and Dependencies}
+The system assumes:
+\begin{itemize}
+	\item Stable internet connectivity for online operations and synchronization.
+	\item Proper role based access control enforcement.
+	\item Accurate product and stock data provided by stores.
+	\item Availability of riders within operational cities.
+	\item Continuous support of the underlying platform technologies.
+\end{itemize}
+
+
+
+\section{External Interface Requirements}
+
+\subsection{User Interfaces}
+The system provides the following user interfaces:
+\begin{itemize}
+	\item \textbf{POS Interface:} Used by Store Admins for product management and sales.
+	\item \textbf{Store Admin Portal:} Used to submit and manage product proposals.
+	\item \textbf{Franchise Admin Portal:} Used to review proposals and manage cities and franchises.
+	\item \textbf{Customer Interface:} Used to browse products and place orders.
+	\item \textbf{Rider Interface:} Used to view delivery jobs and submit bids.
+\end{itemize}
+All interfaces follow a consistent and user friendly design.
+
+\subsection{Software Interfaces}
+The system interacts with:
+\begin{itemize}
+	\item A centralized database for data storage.
+	\item Reporting and analytics modules for operational insights.
+\end{itemize}
+
+\subsection{Communication Interfaces}
+The system uses:
+\begin{itemize}
+	\item HTTP/HTTPS for client server communication.
+	\item Secure authentication tokens for session management.
+	\item Notification services for order and delivery updates.
+\end{itemize}
+
+
+
+\section{System Features}
+
+\subsection{System Administration (Super Admin)}
+\subsubsection{Description and Priority}
+This feature provides system level administrative control to the Super Admin. It allows centralized management of global system configurations, user roles, and platform wide monitoring. This feature is of high priority as it ensures governance, stability, and proper operation of the Barqi Bazar platform across all franchises and cities.
+
+\subsubsection{Functional Requirements}
+\begin{itemize}
+	\item REQ 0: The system must allow the Super Admin to access a secure administrative interface.
+	\item REQ 1: The Super Admin must be able to manage global system configurations and settings.
+	\item REQ 2: The Super Admin must be able to create, update, enable, or disable user roles across the platform.
+	\item REQ 3: The Super Admin must be able to view platform wide operational data, including stores, franchises, cities, and riders.
+	\item REQ 4: The system must allow the Super Admin to monitor overall system health and activity logs.
+	\item REQ 5: The Super Admin must have the ability to restrict or suspend platform access in case of policy violations or system misuse.
+\end{itemize}
+
+\subsection{POS Operations}
+\subsubsection{Description and Priority}
+This feature allows Store Admins to manage products and perform sales through an offline capable POS. This feature is of high priority.
+
+\subsubsection{Functional Requirements}
+\begin{itemize}
+	\item REQ 1: The system must allow Store Admins to login to the POS.
+	\item REQ 2: The POS must support product creation and updates.
+	\item REQ 3: The POS must record sales transactions.
+	\item REQ 4: The POS must update stock after each sale.
+\end{itemize}
+
+\subsection{Product Proposal and Approval}
+\subsubsection{Description and Priority}
+This feature ensures controlled product publishing through franchise approval. Priority is high.
+
+\subsubsection{Functional Requirements}
+\begin{itemize}
+	\item REQ 5: Store Admins must be able to submit product proposals.
+	\item REQ 6: Franchise Admins must approve or reject proposals.
+	\item REQ 7: Only approved products may be published online.
+\end{itemize}
+
+\subsection{Order Processing}
+\subsubsection{Description and Priority}
+Handles customer orders, validation, and routing. Priority is high.
+
+\subsubsection{Functional Requirements}
+\begin{itemize}
+	\item REQ 8: Customers must be able to place orders.
+	\item REQ 9: The system must validate stock before confirmation.
+	\item REQ 10: Orders must be routed to the appropriate store.
+\end{itemize}
+
+\subsection{Rider Bidding and Delivery}
+\subsubsection{Description and Priority}
+Supports delivery assignment via rider bidding. Priority is medium.
+
+\subsubsection{Functional Requirements}
+\begin{itemize}
+	\item REQ 11: Riders must be able to bid on delivery jobs.
+	\item REQ 12: The system must assign deliveries based on bidding.
+	\item REQ 13: Delivery status must be updated during fulfillment.
+\end{itemize}
+
+\subsection{Franchise and City Management}
+\subsubsection{Description and Priority}
+Provides governance and scalability. Priority is medium.
+
+\subsubsection{Functional Requirements}
+\begin{itemize}
+	\item REQ 14: Franchise Admins must manage franchises and cities.
+	\item REQ 15: Riders must be assigned to specific cities.
+\end{itemize}
+
+
+\section{Other Nonfunctional Requirements}
+
+\subsection{Performance Requirements}
+The system must support concurrent users with minimal response time.
+
+\subsection{Security Requirements}
+\begin{itemize}
+	\item REQ 16: Secure authentication must be enforced.
+	\item REQ 17: Role based access control must be implemented.
+	\item REQ 18: All data transmission must be encrypted.
+\end{itemize}
+
+\subsection{Software Quality Attributes}
+The system must be scalable, reliable, maintainable, and secure.
+
+\subsection{Business Rules}
+\begin{itemize}
+	\item REQ 19: Only Franchise Admins can approve products.
+	\item REQ 20: Store Admins cannot publish products directly.
+	\item REQ 21: Riders can only access assigned deliveries.
+\end{itemize}
+
+
+
+\section{Other Requirements}
+
+\subsection{Database Requirements}
+The system must store users, products, proposals, orders, deliveries, and logs in a centralized database.
+
+\subsection{Legal Requirements}
+The system must comply with applicable data protection and privacy regulations.

@@ -1,0 +1,151 @@
+\section{Introduction}
+The increasing demand for digital commerce and faster fulfilment in urban areas has created pressure on local retail stores to connect their physical operations with online marketplaces and delivery networks. Many small and medium sized stores still depend on traditional Point of Sale (POS) setups that work only for in store selling and basic inventory handling. These systems typically operate in isolation, making it difficult for stores to publish products online, manage online orders, and coordinate delivery activities in a structured way. At the same time, common online marketplaces allow open product listing without strong approval control, which can lead to inconsistent product quality and poor standardization across vendors.
+
+Barqi Bazar is proposed as a service oriented smart commerce platform that bridges offline retail operations with online selling and delivery management. The system is designed around a controlled workflow where store administrators manage products and sales using an offline capable POS, while franchise administrators supervise and approve product proposals before products become visible online. Customers can place orders through the platform, and delivery is coordinated through a rider bidding mechanism that supports efficient assignment. In addition, the system supports city and franchise segmentation to manage multi region operations in a structured manner.
+
+The key functionalities of the proposed system include:
+\begin{itemize}
+	\item \textbf{Offline capable POS Operations:} Store administrators can perform product management and sales transactions through a POS system that remains usable even when connectivity is unreliable, ensuring business continuity.
+	\item \textbf{Controlled Product Proposal and Approval:} Products intended for online selling are submitted as proposals by store administrators and reviewed by franchise administrators for acceptance or rejection, ensuring quality control before publishing.
+	\item \textbf{Order Processing and Delivery Coordination:} Customer orders follow a structured lifecycle including stock validation, rider bidding, and routing of orders to the appropriate store and rider based on operational rules.
+\end{itemize}
+
+By integrating these features, Barqi Bazar aims to provide a controlled and scalable environment for local commerce, enabling stores to participate in online selling while maintaining governance through franchise level approval and city based management.
+
+\section{Related Work}
+Research and industry solutions in retail technology generally fall into three areas: (i) traditional POS systems, (ii) online marketplaces, and (iii) delivery/logistics platforms. Traditional POS solutions focus on fast billing and local inventory but are limited in their ability to integrate with online selling and centralized management. Online marketplaces provide digital exposure but often do not enforce structured approval workflows. Delivery platforms provide operational delivery support but are typically not integrated with store level inventory and sales processes. Barqi Bazar combines these domains into a controlled, service oriented workflow aligned with real retail operations.
+
+\subsection{Offline first POS and Retail Operations}
+Offline first POS systems are designed to allow stores to continue operations during unstable connectivity. Such systems commonly focus on maintaining local operational capability for product handling and sales, and later synchronizing data when connectivity is available. This approach reduces downtime and improves reliability for small stores operating in constrained environments.
+
+\subsection{Controlled Product Publishing in Marketplaces}
+Many open marketplaces allow vendors to publish products immediately. While this improves availability, it can reduce platform trust due to inconsistent pricing, poor product descriptions, and lack of verification. Controlled publishing models, where products pass through an approval stage, improve consistency and governance. Barqi Bazar adopts this idea by introducing product proposals and franchise level approval before products become live.
+
+\subsection{Delivery Assignment and Rider Coordination}
+Modern commerce platforms require structured delivery coordination to ensure timely fulfilment. Delivery assignment models vary from direct dispatch to bidding based assignment. Bidding can allow rider participation and support operational flexibility. Barqi Bazar uses rider bidding as a controlled mechanism, allowing the system to select an appropriate rider for delivery jobs after stock validation and order routing.
+
+\subsection{Multi city and Franchise based Management}
+Large scale commerce systems require geographical segmentation. City based management supports region specific operations, rider availability control, and routing decisions. Franchise based oversight supports governance across multiple stores and ensures uniform operational rules. Barqi Bazar includes both city and franchise management to support scalability.
+
+\section{Objectives}
+The objectives of this project are as follows:
+\begin{itemize}
+	\item To develop an offline capable POS system that supports product management and sales transactions for store administrators.
+	\item To implement a controlled product proposal workflow where products are reviewed and approved by franchise administrators before being published online.
+	\item To support customer ordering with a structured order lifecycle including stock validation and order routing.
+	\item To enable delivery coordination using a rider bidding mechanism for efficient and flexible delivery assignment.
+	\item To support multi city and franchise based management for scalable operations and governance.
+\end{itemize}
+
+\section{Problem Statement}
+Local retail stores often struggle to participate in online commerce due to disconnected systems. Traditional POS solutions support in store operations but do not provide structured online publishing, centralized approvals, or integrated order fulfilment. Open marketplaces allow product listing without strong governance, resulting in inconsistent product quality and pricing. Furthermore, lack of coordination between stores, riders, and operational regions creates delays and operational confusion. There is a need for a controlled system that bridges offline retail operations with online selling and structured delivery management under franchise and city based governance.
+
+\section{Methodology}
+The development of Barqi Bazar follows a structured software engineering process to ensure clarity, maintainability, and consistent documentation. The project is planned using a waterfall style progression where each phase is completed and validated before moving to the next. This supports strong documentation and clear alignment with the IEEE style report structure.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/waterfall.png}
+	\caption{Waterfall model}
+	\label{fig:waterfall}
+\end{figure}
+
+\subsection{System Architecture}
+Barqi Bazar follows a \textbf{service oriented architecture} where major responsibilities are separated into logical services and platform components. The POS system supports store side operations, the administrative portals support management and approval, and the platform coordinates catalog publishing, order processing, and delivery assignment. This separation improves modularity and allows future enhancements without rewriting the entire system.
+
+\subsection{Technology Stack}
+The following technologies are used in the development of this project:
+\begin{itemize}
+	\item \textbf{Frontend:} Web based interfaces are used for administrative portals and customer access, designed using modern responsive UI practices.
+	\item \textbf{POS Application:} The POS component provides store operations and supports offline usage, focusing on product handling and sales.
+	\item \textbf{Backend Platform:} A centralized backend platform manages product proposals, approvals, orders, and delivery coordination.
+	\item \textbf{Database:} A database is used for storing users, products, proposals, orders, riders, and franchise/city information.
+\end{itemize}
+
+\subsection{Development Approach}
+The development approach is divided into the following phases:
+\begin{enumerate}
+	\item \textbf{Requirement Analysis:} Identify actors (store admin, franchise admin, customer, rider) and define required workflows.
+	\item \textbf{System Design:} Prepare UML diagrams including use case, sequence, component, and ER diagrams to model system structure and behavior.
+	\item \textbf{Implementation:} Develop the POS and portals and integrate platform level workflows for proposals, orders, and delivery coordination.
+	\item \textbf{Testing:} Validate core workflows such as POS login, product management, sales, proposal approval, order processing, and rider bidding.
+\end{enumerate}
+
+\section{System Architecture}
+Barqi Bazar is structured around a service oriented design that separates store operations from platform governance and delivery coordination. The major parts of the system include:
+\begin{itemize}
+	\item \textbf{POS System:} Used by store administrators to manage products and sales.
+	\item \textbf{Store Admin Portal:} Used to manage and submit product proposals for online publishing.
+	\item \textbf{Franchise Admin Portal:} Used to review proposals, approve/reject products, and manage city/franchise operations.
+	\item \textbf{Customer Ordering Interface:} Allows customers to place orders through the platform.
+	\item \textbf{Rider Interaction Layer:} Supports rider bidding for delivery assignment and delivery coordination.
+\end{itemize}
+This architecture supports controlled commerce where store operations remain practical while platform governance ensures quality and consistency.
+
+\section{Technology Stack}
+Barqi Bazar is implemented using a modern technology stack suitable for web based systems and service oriented workflows. The system relies on web interfaces for portals, a POS application for store operations, and a backend platform for workflow coordination. A database persists operational records and ensures data consistency across users, products, proposals, and orders.
+
+\section{Functional Requirements}
+The following are the key functional requirements of Barqi Bazar, categorized by system responsibilities and actors.
+
+\subsection{Store Admin (POS Operations)}
+\begin{itemize}
+	\item The system must allow store administrators to login to the POS securely.
+	\item The POS must allow store administrators to manage product data (add/update).
+	\item The POS must support sales processing and update stock accordingly.
+	\item The POS must allow store administrators to logout and clear session state.
+\end{itemize}
+
+\subsection{Product Proposal and Approval (Contract Flow)}
+\begin{itemize}
+	\item The system must allow store administrators to select products and create proposals for online publishing.
+	\item The platform must store proposals and maintain status (submitted/approved/rejected).
+	\item The franchise administrator must be able to review and accept or reject proposals.
+	\item Approved proposals must result in the product becoming live on the online marketplace.
+\end{itemize}
+
+\subsection{Customer Ordering and Order Processing}
+\begin{itemize}
+	\item The system must allow customers to place orders through the platform.
+	\item The platform must validate stock availability before confirming the order.
+	\item The platform must route the order to the relevant store for fulfilment.
+\end{itemize}
+
+\subsection{Rider Bidding and Delivery Assignment}
+\begin{itemize}
+	\item The system must allow riders to participate in bidding for delivery jobs.
+	\item The platform must assign delivery based on the bidding workflow.
+	\item The system must update delivery assignment status for operational coordination.
+\end{itemize}
+
+\subsection{Franchise and City Management}
+\begin{itemize}
+	\item The system must allow franchise administrators to manage franchises and cities.
+	\item The system must support rider assignment and availability under city level operations.
+\end{itemize}
+
+\section{Comparison with Existing Systems}
+To highlight the advantages of Barqi Bazar, a comparison is made with common existing systems. The key differences include offline capable POS integration, controlled product approval, and structured delivery assignment.
+
+\begin{table}[H]
+	\centering
+	\caption{Comparison of Existing Systems with Proposed System}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|p{3.5cm}|p{5cm}|p{5cm}|}
+			\hline
+			\textbf{Feature} & \textbf{Existing Systems} & \textbf{Proposed System (Barqi Bazar)} \\
+			\hline
+			POS Integration & POS works only for in store operations & Offline capable POS integrated with platform workflows \\
+			\hline
+			Product Publishing & Open listing or manual coordination & Controlled proposal submission with franchise approval \\
+			\hline
+			Order Processing & Limited multi store coordination & Stock validation, routing, and structured order lifecycle \\
+			\hline
+			Delivery Assignment & Manual dispatch or non integrated delivery apps & Rider bidding and platform controlled delivery assignment \\
+			\hline
+			Governance & Limited standardization across vendors & Franchise and city based management for control and scaling \\
+			\hline
+		\end{tabular}
+	}
+	\label{table:comparison}
+\end{table}

@@ -1,0 +1,421 @@
+\section{Introduction of Design Document}
+
+Software design forms the backbone of the Barqi Bazar platform by transforming system requirements into a structured and implementable solution. It plays a critical role in ensuring that the integration of offline POS operations, administrative portals, and online order and delivery workflows is reliable, scalable, and maintainable. A well defined design helps identify potential issues at an early stage, reducing development risks and improving overall system quality.
+
+The design process for Barqi Bazar focuses on defining the system architecture, component responsibilities, data organization, and interaction flows between different system actors. Architectural design establishes the high level structure of the platform, separating concerns such as POS operations, product approval workflows, order processing, and delivery coordination. Data design ensures that information related to users, products, proposals, orders, and deliveries is organized efficiently, while interface design emphasizes usability for different roles including store administrators, franchise administrators, customers, and riders.
+
+The design approach incorporates multiple perspectives to provide a comprehensive understanding of the system. Structural views describe how system components are organized and interact, behavioral views illustrate the sequence of operations across workflows, and interaction views explain how different users communicate with the system. These perspectives allow complex workflows such as product proposal approval and rider based delivery assignment to be analyzed and validated systematically.
+
+Beyond technical considerations, the design document serves as a key communication artifact for Barqi Bazar. It aligns stakeholders, developers, and evaluators by presenting a clear and shared understanding of system behavior and structure. By defining responsibilities, interfaces, and workflows in advance, the design reduces ambiguity and provides a roadmap for implementation and testing. Overall, the design of Barqi Bazar supports a controlled, service oriented commerce platform that is adaptable, user centric, and suitable for real world retail and delivery environments.
+
+\section{Use Case Diagram}
+The detailed usecase diagram is given below
+\FloatBarrier
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/usecase/usecase.png}
+	\caption{Use Case Diagram}
+	\label{fig:use_case_diagram}
+\end{figure}
+\FloatBarrier
+
+%-------------------------------------------------
+\section{Use Case: Login}
+
+\begin{longtable}{|>{\raggedright}p{3cm}|p{10cm}|}
+	\caption{Use Case Description for Login} \\ \hline
+	\textbf{Description} & Allows authorized users to securely access the Barqi Bazar system. \\ \hline
+	\textbf{Actors} & Store Admin, Franchise Admin, Super Admin \\ \hline
+	\textbf{Preconditions} & The user must be registered in the system and have valid credentials. \\ \hline
+	\textbf{Postconditions} & User is authenticated and granted access based on role permissions. \\ \hline
+	\textbf{Inputs} & Username, Password \\ \hline
+	\textbf{Alternative Flow} &
+	\begin{minipage}[t]{\linewidth}
+		\begin{itemize}
+			\item If credentials are invalid, an error message is displayed.
+			\item If the account is disabled, access is denied.
+		\end{itemize}
+	\end{minipage} \\ \hline
+	\textbf{Basic Flow} &
+	\begin{minipage}[t]{\linewidth}
+		\begin{enumerate}
+			\item User opens the login screen.
+			\item User enters login credentials.
+			\item System validates credentials.
+			\item System grants access based on role.
+		\end{enumerate}
+	\end{minipage} \\ \hline
+	\textbf{Includes} & Validate Credentials \\ \hline
+	\textbf{Extends} & None \\ \hline
+\end{longtable}
+
+\section{Use Case: Manage Product Data}
+
+\begin{longtable}{|>{\raggedright}p{3cm}|p{10cm}|}
+	\caption{Use Case Description for Manage Product Data} \\ \hline
+	\textbf{Description} & Allows Store Admin to add or update product information using POS. \\ \hline
+	\textbf{Actors} & Store Admin \\ \hline
+	\textbf{Preconditions} & Store Admin must be logged in to the POS system. \\ \hline
+	\textbf{Postconditions} & Product data is saved or updated in the system. \\ \hline
+	\textbf{Inputs} & Product name, price, category, quantity \\ \hline
+	\textbf{Alternative Flow} &
+	\begin{minipage}[t]{\linewidth}
+		\begin{itemize}
+			\item If invalid data is entered, system displays an error.
+		\end{itemize}
+	\end{minipage} \\ \hline
+	\textbf{Basic Flow} &
+	\begin{minipage}[t]{\linewidth}
+		\begin{enumerate}
+			\item Store Admin selects product management option.
+			\item Enters or updates product details.
+			\item System validates and saves data.
+		\end{enumerate}
+	\end{minipage} \\ \hline
+	\textbf{Includes} & Login \\ \hline
+	\textbf{Extends} & Add/Update Product \\ \hline
+\end{longtable}
+
+\section{Use Case: Submit Product Proposal}
+
+\begin{longtable}{|>{\raggedright}p{3cm}|p{10cm}|}
+	\caption{Use Case Description for Submit Product Proposal} \\ \hline
+	\textbf{Description} & Submits product proposals for online publishing approval. \\ \hline
+	\textbf{Actors} & Store Admin \\ \hline
+	\textbf{Preconditions} & Product must exist in POS system. \\ \hline
+	\textbf{Postconditions} & Proposal is sent to Franchise Admin for review. \\ \hline
+	\textbf{Inputs} & Product details, proposed price \\ \hline
+	\textbf{Alternative Flow} &
+	\begin{minipage}[t]{\linewidth}
+		\begin{itemize}
+			\item If required fields are missing, submission fails.
+		\end{itemize}
+	\end{minipage} \\ \hline
+	\textbf{Basic Flow} &
+	\begin{minipage}[t]{\linewidth}
+		\begin{enumerate}
+			\item Store Admin selects product for proposal.
+			\item Proposal details are entered.
+			\item System submits proposal.
+		\end{enumerate}
+	\end{minipage} \\ \hline
+	\textbf{Includes} & Manage Product Data \\ \hline
+	\textbf{Extends} & None \\ \hline
+\end{longtable}
+
+\section{Use Case: Review Product Proposal}
+
+\begin{longtable}{|>{\raggedright}p{3cm}|p{10cm}|}
+	\caption{Use Case Description for Review Product Proposal} \\ \hline
+	\textbf{Description} & Reviews submitted product proposals for approval or rejection. \\ \hline
+	\textbf{Actors} & Franchise Admin \\ \hline
+	\textbf{Preconditions} & Proposal must be submitted by Store Admin. \\ \hline
+	\textbf{Postconditions} & Proposal status is updated. \\ \hline
+	\textbf{Inputs} & Proposal data \\ \hline
+	\textbf{Alternative Flow} &
+	\begin{minipage}[t]{\linewidth}
+		\begin{itemize}
+			\item Proposal may be rejected if criteria not met.
+		\end{itemize}
+	\end{minipage} \\ \hline
+	\textbf{Basic Flow} &
+	\begin{minipage}[t]{\linewidth}
+		\begin{enumerate}
+			\item Franchise Admin views proposals.
+			\item Reviews proposal details.
+			\item Approves or rejects proposal.
+		\end{enumerate}
+	\end{minipage} \\ \hline
+	\textbf{Includes} & None \\ \hline
+	\textbf{Extends} & Approve Proposal, Reject Proposal \\ \hline
+\end{longtable}
+
+\section{Use Case: Place Order}
+
+\begin{longtable}{|>{\raggedright}p{3cm}|p{10cm}|}
+	\caption{Use Case Description for Place Order} \\ \hline
+	\textbf{Description} & Allows customers to place an order for available products. \\ \hline
+	\textbf{Actors} & Customer \\ \hline
+	\textbf{Preconditions} & Products must be published and available. \\ \hline
+	\textbf{Postconditions} & Order is created and processed. \\ \hline
+	\textbf{Inputs} & Product selection, delivery details \\ \hline
+	\textbf{Alternative Flow} &
+	\begin{minipage}[t]{\linewidth}
+		\begin{itemize}
+			\item Order is cancelled if stock is unavailable.
+		\end{itemize}
+	\end{minipage} \\ \hline
+	\textbf{Basic Flow} &
+	\begin{minipage}[t]{\linewidth}
+		\begin{enumerate}
+			\item Customer selects products.
+			\item Customer places order.
+			\item System validates stock.
+			\item System initiates rider bidding.
+		\end{enumerate}
+	\end{minipage} \\ \hline
+	\textbf{Includes} & Validate Stock, Initiate Rider Bidding \\ \hline
+	\textbf{Extends} & Track Order, Cancel Order \\ \hline
+\end{longtable}
+
+\section{Use Case: Rider Bidding}
+
+\begin{longtable}{|>{\raggedright}p{3cm}|p{10cm}|}
+	\caption{Use Case Description for Rider Bidding} \\ \hline
+	\textbf{Description} & Allows riders to bid on delivery jobs. \\ \hline
+	\textbf{Actors} & Rider \\ \hline
+	\textbf{Preconditions} & Order must be available for delivery. \\ \hline
+	\textbf{Postconditions} & Delivery is assigned to a rider. \\ \hline
+	\textbf{Inputs} & Bid amount, availability \\ \hline
+	\textbf{Alternative Flow} &
+	\begin{minipage}[t]{\linewidth}
+		\begin{itemize}
+			\item No bids received; system retries.
+		\end{itemize}
+	\end{minipage} \\ \hline
+	\textbf{Basic Flow} &
+	\begin{minipage}[t]{\linewidth}
+		\begin{enumerate}
+			\item Rider views available delivery job.
+			\item Rider submits bid.
+			\item System assigns delivery.
+		\end{enumerate}
+	\end{minipage} \\ \hline
+	\textbf{Includes} & None \\ \hline
+	\textbf{Extends} & Submit Delivery Bid \\ \hline
+\end{longtable}
+
+\section{Sequence Diagrams}
+A sequence diagram shows the participants in an interaction and the sequence of messages among them. Each sequence diagram shows the interaction of a system with its actor to perform all or part of a use case. Scenarios for our system are presented below, along with their sequence diagrams.
+
+\subsection{Sequence diagram for login}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/sd/login.png}
+	\caption{Sequence Diagram for login}
+	\label{fig:login_sequence}
+\end{figure}
+
+\subsection{POS product management sequence diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/sd/pos-product-management.png}
+	\caption{POS Product Management Sequence Diagram}
+	\label{fig:pos_product_management_sequence}
+\end{figure}
+
+\subsection{POS sell product sequence diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/sd/sell-products.png}
+	\caption{POS Sell Product Sequence Diagram}
+	\label{fig:pos_sell_product_sequence}
+\end{figure}
+
+\subsection{Sequence diagram for logout}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/sd/pos-logout.png}
+	\caption{Sequence Diagram for logout}
+	\label{fig:logout_sequence}
+\end{figure}
+
+\subsection{Product proposal submission sequence diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/sd/product-proposal-submission.png}
+	\caption{Product Proposal Submission Sequence Diagram}
+	\label{fig:product_proposal_submission_sequence}
+\end{figure}
+
+\subsection{Product proposal review and approval sequence diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/sd/proposal-review.png}
+	\caption{Product Proposal Review and Approval Sequence Diagram}
+	\label{fig:product_proposal_review_sequence}
+\end{figure}
+
+\subsection{Customer place order sequence diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/sd/place-order.png}
+	\caption{Customer Place Order Sequence Diagram}
+	\label{fig:place_order_sequence}
+\end{figure}
+
+\subsection{Rider bidding sequence diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/sd/rider-bidding.png}
+	\caption{Rider Bidding Sequence Diagram}
+	\label{fig:rider_bidding_sequence}
+\end{figure}
+
+\subsection{Order routing and delivery assignment sequence diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/sd/order-routing.png}
+	\caption{Order Routing and Delivery Assignment Sequence Diagram}
+	\label{fig:order_routing_sequence}
+\end{figure}
+
+\subsection{Order tracking sequence diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/sd/order-tracking.png}
+	\caption{Order Tracking Sequence Diagram}
+	\label{fig:order_tracking_sequence}
+\end{figure}
+
+\section{Activity Diagram}
+An activity diagram visually represents the workflow or sequence of activities in a process. It shows the flow of control from one activity to another, highlighting decision points, parallel activities, and conditions. Activity diagrams are used to model both system level and user level processes, helping to understand and optimize workflows.
+
+\subsection{Activity diagram for login}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figures/ad/login.png}
+	\caption{Activity Diagram for login}
+	\label{fig:activity_login}
+\end{figure}
+
+\subsection{Franchise cities management activity diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figures/ad/franchise-cities.png}
+	\caption{Franchise Cities Management Activity Diagram}
+	\label{fig:activity_franchise_cities}
+\end{figure}
+
+\subsection{Product management activity diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figures/ad/product-management.png}
+	\caption{Product Management Activity Diagram}
+	\label{fig:activity_product_management}
+\end{figure}
+
+\subsection{Sell product activity diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figures/ad/sell-products.png}
+	\caption{Sell Product Activity Diagram}
+	\label{fig:activity_sell_products}
+\end{figure}
+
+\subsection{Product proposal activity diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figures/ad/proposal.png}
+	\caption{Product Proposal Activity Diagram}
+	\label{fig:activity_product_proposal}
+\end{figure}
+
+\subsection{Customer place order activity diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figures/ad/place-order.png}
+	\caption{Customer Place Order Activity Diagram}
+	\label{fig:activity_place_order}
+\end{figure}
+
+\subsection{Order tracking activity diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figures/ad/order-track.png}
+	\caption{Order Tracking Activity Diagram}
+	\label{fig:activity_order_tracking}
+\end{figure}
+
+\subsection{Rider activity diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figures/ad/rider.png}
+	\caption{Rider Activity Diagram}
+	\label{fig:activity_rider}
+\end{figure}
+
+\subsection{Rider management activity diagram}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figures/ad/rider-management.png}
+	\caption{Rider Management Activity Diagram}
+	\label{fig:activity_rider_management}
+\end{figure}
+
+\section{ER Diagram}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/er/er.png} % Replace with the filename of your diagram
+    \caption{Activity Diagram for ER Diagram}
+    \label{fig:activity_diagram}
+\end{figure}
+
+\subsubsection{Key Entities}
+
+The major entities identified in the Barqi Bazar system are described below:
+
+\begin{itemize}
+	\item \textbf{User:}  
+	Represents all users of the system, including Store Admins, Franchise Admins, Super Admins, Customers, and Riders. It stores authentication credentials, role information, and account status required for secure system access.
+	
+	\item \textbf{Store Admin:}  
+	Responsible for managing store level activities such as POS operations, product management, and submitting product proposals for online publishing.
+	
+	\item \textbf{Franchise Admin:}  
+	Reviews product proposals submitted by Store Admins and decides whether to approve or reject them before products are published on the online marketplace.
+	
+	\item \textbf{Super Admin:}  
+	Manages system wide operations including franchises, cities, and rider control. This role ensures administrative governance and platform level management.
+	
+	\item \textbf{City and Franchise:}  
+	These entities define the geographical and operational structure of the system. Each franchise is associated with a city and operates under administrative supervision.
+	
+	\item \textbf{Product:}  
+	Stores information related to products such as name, category, base price, and online availability status.
+	
+	\item \textbf{Inventory:}  
+	Maintains stock information for products, including available quantity and minimum stock level. It supports stock validation during POS sales and online orders.
+	
+	\item \textbf{Product Proposal:}  
+	Represents the workflow for submitting store products to the online marketplace. It tracks proposal status, submission time, and review decisions.
+	
+	\item \textbf{Customer:}  
+	Places online orders and tracks order and delivery status through the system.
+	
+	\item \textbf{Order and Order Item:}  
+	The Order entity records overall order details, while Order Item maintains information about individual products within an order, including quantity and price.
+	
+	\item \textbf{Delivery Job:}  
+	Created after an order is placed to manage delivery execution. It tracks delivery status and the assigned rider.
+	
+	\item \textbf{Rider:}  
+	Represents delivery personnel who participate in rider bidding and complete assigned delivery jobs.
+	
+	\item \textbf{Rider Bid:}  
+	Stores bids submitted by riders for delivery jobs, enabling fair and efficientider assignment.
+\end{itemize}
+
+
+
+\section{Workflow Diagram}
+
+The workflow diagram illustrates the end-to-end operational flow of the system, showing the interactions between different user roles and system components. It provides a clear overview of how processes are initiated, validated, and completed across the platform.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/workflow/workflow.png}
+	\caption{System Workflow Diagram}
+	\label{fig:workflow_diagram}
+\end{figure}
+
+\section{Architecture diagram }
+
+The Architecture diagram depicts the end-to-end system process among the parent, admin, and scheduler subsystems.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{figures/architecture/system-architecture.png}
+	\caption{System Architecture Diagram}
+	\label{fig:architecture_diagram}
+\end{figure}

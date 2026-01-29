@@ -1,0 +1,169 @@
+\contentsline {section}{\numberline {1.1}Introduction}{2}{}%
+\contentsline {section}{\numberline {1.2}Related Work}{3}{}%
+\contentsline {subsection}{\numberline {1.2.1}Offline first POS and Retail Operations}{3}{}%
+\contentsline {subsection}{\numberline {1.2.2}Controlled Product Publishing in Marketplaces}{3}{}%
+\contentsline {subsection}{\numberline {1.2.3}Delivery Assignment and Rider Coordination}{3}{}%
+\contentsline {subsection}{\numberline {1.2.4}Multi city and Franchise based Management}{4}{}%
+\contentsline {section}{\numberline {1.3}Objectives}{4}{}%
+\contentsline {section}{\numberline {1.4}Problem Statement}{4}{}%
+\contentsline {section}{\numberline {1.5}Methodology}{5}{}%
+\contentsline {subsection}{\numberline {1.5.1}System Architecture}{5}{}%
+\contentsline {subsection}{\numberline {1.5.2}Technology Stack}{5}{}%
+\contentsline {subsection}{\numberline {1.5.3}Development Approach}{6}{}%
+\contentsline {section}{\numberline {1.6}System Architecture}{6}{}%
+\contentsline {section}{\numberline {1.7}Technology Stack}{7}{}%
+\contentsline {section}{\numberline {1.8}Functional Requirements}{7}{}%
+\contentsline {subsection}{\numberline {1.8.1}Store Admin (POS Operations)}{7}{}%
+\contentsline {subsection}{\numberline {1.8.2}Product Proposal and Approval (Contract Flow)}{7}{}%
+\contentsline {subsection}{\numberline {1.8.3}Customer Ordering and Order Processing}{7}{}%
+\contentsline {subsection}{\numberline {1.8.4}Rider Bidding and Delivery Assignment}{8}{}%
+\contentsline {subsection}{\numberline {1.8.5}Franchise and City Management}{8}{}%
+\contentsline {section}{\numberline {1.9}Comparison with Existing Systems}{8}{}%
+\contentsline {section}{\numberline {2.1}Introduction}{10}{}%
+\contentsline {subsection}{\numberline {2.1.1}Purpose}{10}{}%
+\contentsline {subsection}{\numberline {2.1.2}Intended Audience and Reading Suggestions}{10}{}%
+\contentsline {subsection}{\numberline {2.1.3}Project Scope}{10}{}%
+\contentsline {section}{\numberline {2.2}Overall Description}{10}{}%
+\contentsline {subsection}{\numberline {2.2.1}Product Perspective}{10}{}%
+\contentsline {subsection}{\numberline {2.2.2}User Classes and Characteristics}{11}{}%
+\contentsline {subsection}{\numberline {2.2.3}Product Functions}{11}{}%
+\contentsline {subsection}{\numberline {2.2.4}Operating Environment}{12}{}%
+\contentsline {subsection}{\numberline {2.2.5}Design}{12}{}%
+\contentsline {subsection}{\numberline {2.2.6}Assumptions and Dependencies}{12}{}%
+\contentsline {section}{\numberline {2.3}External Interface Requirements}{12}{}%
+\contentsline {subsection}{\numberline {2.3.1}User Interfaces}{12}{}%
+\contentsline {subsection}{\numberline {2.3.2}Software Interfaces}{13}{}%
+\contentsline {subsection}{\numberline {2.3.3}Communication Interfaces}{13}{}%
+\contentsline {section}{\numberline {2.4}System Features}{13}{}%
+\contentsline {subsection}{\numberline {2.4.1}System Administration (Super Admin)}{13}{}%
+\contentsline {subsubsection}{Description and Priority}{13}{}%
+\contentsline {subsubsection}{Functional Requirements}{13}{}%
+\contentsline {subsection}{\numberline {2.4.2}POS Operations}{14}{}%
+\contentsline {subsubsection}{Description and Priority}{14}{}%
+\contentsline {subsubsection}{Functional Requirements}{14}{}%
+\contentsline {subsection}{\numberline {2.4.3}Product Proposal and Approval}{14}{}%
+\contentsline {subsubsection}{Description and Priority}{14}{}%
+\contentsline {subsubsection}{Functional Requirements}{14}{}%
+\contentsline {subsection}{\numberline {2.4.4}Order Processing}{14}{}%
+\contentsline {subsubsection}{Description and Priority}{14}{}%
+\contentsline {subsubsection}{Functional Requirements}{14}{}%
+\contentsline {subsection}{\numberline {2.4.5}Rider Bidding and Delivery}{14}{}%
+\contentsline {subsubsection}{Description and Priority}{14}{}%
+\contentsline {subsubsection}{Functional Requirements}{15}{}%
+\contentsline {subsection}{\numberline {2.4.6}Franchise and City Management}{15}{}%
+\contentsline {subsubsection}{Description and Priority}{15}{}%
+\contentsline {subsubsection}{Functional Requirements}{15}{}%
+\contentsline {section}{\numberline {2.5}Other Nonfunctional Requirements}{15}{}%
+\contentsline {subsection}{\numberline {2.5.1}Performance Requirements}{15}{}%
+\contentsline {subsection}{\numberline {2.5.2}Security Requirements}{15}{}%
+\contentsline {subsection}{\numberline {2.5.3}Software Quality Attributes}{15}{}%
+\contentsline {subsection}{\numberline {2.5.4}Business Rules}{15}{}%
+\contentsline {section}{\numberline {2.6}Other Requirements}{16}{}%
+\contentsline {subsection}{\numberline {2.6.1}Database Requirements}{16}{}%
+\contentsline {subsection}{\numberline {2.6.2}Legal Requirements}{16}{}%
+\contentsline {section}{\numberline {3.1}Introduction of Design Document}{18}{}%
+\contentsline {section}{\numberline {3.2}Use Case Diagram}{19}{}%
+\contentsline {section}{\numberline {3.3}Use Case: Login}{19}{}%
+\contentsline {section}{\numberline {3.4}Use Case: Manage Product Data}{20}{}%
+\contentsline {section}{\numberline {3.5}Use Case: Submit Product Proposal}{21}{}%
+\contentsline {section}{\numberline {3.6}Use Case: Review Product Proposal}{21}{}%
+\contentsline {section}{\numberline {3.7}Use Case: Place Order}{22}{}%
+\contentsline {section}{\numberline {3.8}Use Case: Rider Bidding}{22}{}%
+\contentsline {section}{\numberline {3.9}Sequence Diagrams}{23}{}%
+\contentsline {subsection}{\numberline {3.9.1}Sequence diagram for login}{24}{}%
+\contentsline {subsection}{\numberline {3.9.2}POS product management sequence diagram}{25}{}%
+\contentsline {subsection}{\numberline {3.9.3}POS sell product sequence diagram}{26}{}%
+\contentsline {subsection}{\numberline {3.9.4}Sequence diagram for logout}{27}{}%
+\contentsline {subsection}{\numberline {3.9.5}Product proposal submission sequence diagram}{28}{}%
+\contentsline {subsection}{\numberline {3.9.6}Product proposal review and approval sequence diagram}{29}{}%
+\contentsline {subsection}{\numberline {3.9.7}Customer place order sequence diagram}{30}{}%
+\contentsline {subsection}{\numberline {3.9.8}Rider bidding sequence diagram}{31}{}%
+\contentsline {subsection}{\numberline {3.9.9}Order routing and delivery assignment sequence diagram}{32}{}%
+\contentsline {subsection}{\numberline {3.9.10}Order tracking sequence diagram}{33}{}%
+\contentsline {section}{\numberline {3.10}Activity Diagram}{33}{}%
+\contentsline {subsection}{\numberline {3.10.1}Activity diagram for login}{34}{}%
+\contentsline {subsection}{\numberline {3.10.2}Franchise cities management activity diagram}{34}{}%
+\contentsline {subsection}{\numberline {3.10.3}Product management activity diagram}{35}{}%
+\contentsline {subsection}{\numberline {3.10.4}Sell product activity diagram}{36}{}%
+\contentsline {subsection}{\numberline {3.10.5}Product proposal activity diagram}{37}{}%
+\contentsline {subsection}{\numberline {3.10.6}Customer place order activity diagram}{38}{}%
+\contentsline {subsection}{\numberline {3.10.7}Order tracking activity diagram}{39}{}%
+\contentsline {subsection}{\numberline {3.10.8}Rider activity diagram}{40}{}%
+\contentsline {subsection}{\numberline {3.10.9}Rider management activity diagram}{41}{}%
+\contentsline {section}{\numberline {3.11}ER Diagram}{42}{}%
+\contentsline {subsubsection}{Key Entities}{42}{}%
+\contentsline {section}{\numberline {3.12}Workflow Diagram}{43}{}%
+\contentsline {section}{\numberline {3.13}Architecture diagram }{44}{}%
+\contentsline {section}{\numberline {4.1}Project Management Techniques}{46}{}%
+\contentsline {subsection}{\numberline {4.1.1}Gantt Chart}{46}{}%
+\contentsline {subsection}{\numberline {4.1.2}Critical Path Method (CPM)}{46}{}%
+\contentsline {subsection}{\numberline {4.1.3}Benefits of Gantt Chart and CPM}{47}{}%
+\contentsline {section}{\numberline {4.2}Work Breakdown Structure (WBS)}{47}{}%
+\contentsline {subsection}{\numberline {4.2.1}Introduction}{47}{}%
+\contentsline {subsection}{\numberline {4.2.2}WBS for the Proposed System}{47}{}%
+\contentsline {section}{\numberline {4.3}Gantt Chart}{48}{}%
+\contentsline {subsection}{\numberline {4.3.1}Introduction}{48}{}%
+\contentsline {subsection}{\numberline {4.3.2}Gantt Chart for the Proposed System}{49}{}%
+\contentsline {subsection}{\numberline {4.3.3}Importance of the Gantt Chart}{49}{}%
+\contentsline {section}{\numberline {5.1}Chapter Overview}{51}{}%
+\contentsline {section}{\numberline {5.2}Implementation Environment}{51}{}%
+\contentsline {section}{\numberline {5.3}System Architecture Implementation}{51}{}%
+\contentsline {subsection}{\numberline {5.3.1}Project Structure and Modularity}{51}{}%
+\contentsline {subsection}{\numberline {5.3.2}Database Layer}{51}{}%
+\contentsline {section}{\numberline {5.4}Authentication and Role Based Access Control}{52}{}%
+\contentsline {section}{\numberline {5.5}User Interface Results (Role Based Modules)}{52}{}%
+\contentsline {subsection}{\numberline {5.5.1}Point of Sale (POS) Module}{52}{}%
+\contentsline {subsubsection}{POS Dashboard}{53}{}%
+\contentsline {subsubsection}{Product Listing and Management}{53}{}%
+\contentsline {subsubsection}{Add Product Interface}{54}{}%
+\contentsline {subsection}{\numberline {5.5.2}Franchise Management Module}{55}{}%
+\contentsline {subsubsection}{Franchise Dashboard}{55}{}%
+\contentsline {subsubsection}{Add Franchise Interface}{55}{}%
+\contentsline {subsubsection}{City Assignment and Management}{56}{}%
+\contentsline {subsection}{\numberline {5.5.3}Contract Management Module}{57}{}%
+\contentsline {subsubsection}{Contract Listing Dashboard}{57}{}%
+\contentsline {subsubsection}{Proposal Review and Approval}{57}{}%
+\contentsline {subsubsection}{Add Contract Interface}{58}{}%
+\contentsline {subsection}{\numberline {5.5.4}Order Management Module}{59}{}%
+\contentsline {subsubsection}{Order Monitoring Dashboard}{59}{}%
+\contentsline {subsubsection}{Store Order Processing Interface}{59}{}%
+\contentsline {subsubsection}{Order Details and Status Management}{60}{}%
+\contentsline {section}{\numberline {5.6}Functional Results Summary}{61}{}%
+\contentsline {section}{\numberline {5.7}Testing and Validation}{61}{}%
+\contentsline {section}{\numberline {5.8}Conclusion}{61}{}%
+\contentsline {section}{\numberline {6.1}Introduction}{63}{}%
+\contentsline {section}{\numberline {6.2}Testing Objectives}{63}{}%
+\contentsline {section}{\numberline {6.3}Testing Environment}{64}{}%
+\contentsline {subsection}{\numberline {6.3.1}Hardware Environment}{64}{}%
+\contentsline {subsection}{\numberline {6.3.2}Software Environment}{64}{}%
+\contentsline {subsection}{\numberline {6.3.3}Test Data Environment}{64}{}%
+\contentsline {section}{\numberline {6.4}Types of Testing}{64}{}%
+\contentsline {subsection}{\numberline {6.4.1}Unit Testing}{64}{}%
+\contentsline {subsection}{\numberline {6.4.2}Integration Testing}{64}{}%
+\contentsline {subsection}{\numberline {6.4.3}Functional Testing}{65}{}%
+\contentsline {subsection}{\numberline {6.4.4}System Testing}{65}{}%
+\contentsline {subsection}{\numberline {6.4.5}Performance Testing}{65}{}%
+\contentsline {subsection}{\numberline {6.4.6}Security Testing}{65}{}%
+\contentsline {subsection}{\numberline {6.4.7}User Acceptance Testing (UAT)}{65}{}%
+\contentsline {section}{\numberline {6.5}Test Cases}{65}{}%
+\contentsline {subsection}{\numberline {6.5.1}Login Test Case (Valid Credentials)}{66}{}%
+\contentsline {subsection}{\numberline {6.5.2}Login Test Case (Invalid Credentials)}{66}{}%
+\contentsline {subsection}{\numberline {6.5.3}POS Product Listing Test Case}{67}{}%
+\contentsline {subsection}{\numberline {6.5.4}POS Add Product Test Case}{67}{}%
+\contentsline {subsection}{\numberline {6.5.5}POS Sale Transaction Test Case}{68}{}%
+\contentsline {subsection}{\numberline {6.5.6}Franchise Creation Test Case}{68}{}%
+\contentsline {subsection}{\numberline {6.5.7}City Assignment Test Case}{69}{}%
+\contentsline {subsection}{\numberline {6.5.8}Contract Creation Test Case}{69}{}%
+\contentsline {subsection}{\numberline {6.5.9}Contract Proposal Approval/Rejection Test Case}{70}{}%
+\contentsline {subsection}{\numberline {6.5.10}Order Status Update and Tracking Test Case}{70}{}%
+\contentsline {section}{\numberline {6.6}Summary}{70}{}%
+\contentsline {section}{\numberline {7.1}Conclusion}{73}{}%
+\contentsline {section}{\numberline {7.2}Limitations}{73}{}%
+\contentsline {section}{\numberline {7.3}Future Work}{73}{}%
+\contentsline {subsection}{\numberline {7.3.1}Advanced Analytics and Reporting}{74}{}%
+\contentsline {subsection}{\numberline {7.3.2}Smart Rider Assignment}{74}{}%
+\contentsline {subsection}{\numberline {7.3.3}Enhanced Mobile Applications}{74}{}%
+\contentsline {subsection}{\numberline {7.3.4}Payment and Wallet Integration}{74}{}%
+\contentsline {subsection}{\numberline {7.3.5}Scalability and Cloud Deployment}{74}{}%
+\contentsline {subsection}{\numberline {7.3.6}Security and Compliance Enhancements}{74}{}%
+\contentsline {chapter}{References}{74}{}%
