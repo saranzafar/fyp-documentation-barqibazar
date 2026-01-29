@@ -104,16 +104,20 @@ This section presents key test cases executed to validate Barqi Bazar core workf
 POS operations, franchise governance, contract processing, and order lifecycle management.
 Each test case outlines the objective, steps, expected result, and outcome.
 
-% -------------------------
-% Helper style: simple two-column table
-% -------------------------
+% =========================
+% Software Testing – Test Cases
+% =========================
 
-\subsection{Login Test Case (Valid Credentials)}
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{8pt}
+
+% -------------------------
+\subsection{Login Test Case}
 \begin{table}[H]
 	\centering
-	\caption{Test Case TC-01: Login (Valid Credentials)}
+	\caption{Validation of User Login with Valid Credentials — Test Case TC-01}
 	\label{tab:tc_login_valid}
-	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+	\begin{tabular}{|p{0.27\textwidth}|p{0.65\textwidth}|}
 		\hline
 		\textbf{Test Case ID} & TC-01 \\ \hline
 		\textbf{Brief Description} & Login using valid credentials and redirect user to the correct role based dashboard. \\ \hline
@@ -124,12 +128,11 @@ Each test case outlines the objective, steps, expected result, and outcome.
 	\end{tabular}
 \end{table}
 
-\subsection{Login Test Case (Invalid Credentials)}
 \begin{table}[H]
 	\centering
-	\caption{Test Case TC-02: Login (Invalid Credentials)}
+	\caption{Validation of User Login with Invalid Credentials — Test Case TC-02}
 	\label{tab:tc_login_invalid}
-	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+	\begin{tabular}{|p{0.27\textwidth}|p{0.65\textwidth}|}
 		\hline
 		\textbf{Test Case ID} & TC-02 \\ \hline
 		\textbf{Brief Description} & Validate login failure when incorrect credentials are entered. \\ \hline
@@ -140,12 +143,14 @@ Each test case outlines the objective, steps, expected result, and outcome.
 	\end{tabular}
 \end{table}
 
-\subsection{POS Product Listing Test Case}
+% -------------------------
+\subsection{POS Module Test Cases}
+
 \begin{table}[H]
 	\centering
-	\caption{Test Case TC-03: POS Product Listing}
+	\caption{Validation of POS Product Listing Functionality — Test Case TC-03}
 	\label{tab:tc_pos_list}
-	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+	\begin{tabular}{|p{0.27\textwidth}|p{0.65\textwidth}|}
 		\hline
 		\textbf{Test Case ID} & TC-03 \\ \hline
 		\textbf{Brief Description} & Verify POS product listing loads correctly with price and stock status. \\ \hline
@@ -156,12 +161,11 @@ Each test case outlines the objective, steps, expected result, and outcome.
 	\end{tabular}
 \end{table}
 
-\subsection{POS Add Product Test Case}
 \begin{table}[H]
 	\centering
-	\caption{Test Case TC-04: POS Add Product}
+	\caption{Validation of POS Product Creation Functionality — Test Case TC-04}
 	\label{tab:tc_pos_add}
-	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+	\begin{tabular}{|p{0.27\textwidth}|p{0.65\textwidth}|}
 		\hline
 		\textbf{Test Case ID} & TC-04 \\ \hline
 		\textbf{Brief Description} & Validate adding a new product through POS add product interface. \\ \hline
@@ -172,12 +176,11 @@ Each test case outlines the objective, steps, expected result, and outcome.
 	\end{tabular}
 \end{table}
 
-\subsection{POS Sale Transaction Test Case}
 \begin{table}[H]
 	\centering
-	\caption{Test Case TC-05: POS Sale Transaction}
+	\caption{Validation of POS Sales Transaction and Inventory Update — Test Case TC-05}
 	\label{tab:tc_pos_sale}
-	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+	\begin{tabular}{|p{0.27\textwidth}|p{0.65\textwidth}|}
 		\hline
 		\textbf{Test Case ID} & TC-05 \\ \hline
 		\textbf{Brief Description} & Validate that a sale transaction completes and updates inventory correctly. \\ \hline
@@ -188,12 +191,14 @@ Each test case outlines the objective, steps, expected result, and outcome.
 	\end{tabular}
 \end{table}
 
-\subsection{Franchise Creation Test Case}
+% -------------------------
+\subsection{Franchise and Contract Management Test Cases}
+
 \begin{table}[H]
 	\centering
-	\caption{Test Case TC-06: Add Franchise}
+	\caption{Validation of Franchise Creation by Super Admin — Test Case TC-06}
 	\label{tab:tc_franchise_add}
-	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+	\begin{tabular}{|p{0.27\textwidth}|p{0.65\textwidth}|}
 		\hline
 		\textbf{Test Case ID} & TC-06 \\ \hline
 		\textbf{Brief Description} & Verify that Super Admin can create a new franchise successfully. \\ \hline
@@ -204,12 +209,11 @@ Each test case outlines the objective, steps, expected result, and outcome.
 	\end{tabular}
 \end{table}
 
-\subsection{City Assignment Test Case}
 \begin{table}[H]
 	\centering
-	\caption{Test Case TC-07: City Assignment to Franchise}
+	\caption{Validation of City Assignment to Franchise — Test Case TC-07}
 	\label{tab:tc_city_assign}
-	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+	\begin{tabular}{|p{0.27\textwidth}|p{0.65\textwidth}|}
 		\hline
 		\textbf{Test Case ID} & TC-07 \\ \hline
 		\textbf{Brief Description} & Validate that a city can be assigned to a franchise for controlled regional operations. \\ \hline
@@ -220,12 +224,11 @@ Each test case outlines the objective, steps, expected result, and outcome.
 	\end{tabular}
 \end{table}
 
-\subsection{Contract Creation Test Case}
 \begin{table}[H]
 	\centering
-	\caption{Test Case TC-08: Add Contract}
+	\caption{Validation of Contract Creation Workflow — Test Case TC-08}
 	\label{tab:tc_contract_add}
-	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+	\begin{tabular}{|p{0.27\textwidth}|p{0.65\textwidth}|}
 		\hline
 		\textbf{Test Case ID} & TC-08 \\ \hline
 		\textbf{Brief Description} & Validate creation of a new contract between platform and franchise/store. \\ \hline
@@ -236,12 +239,11 @@ Each test case outlines the objective, steps, expected result, and outcome.
 	\end{tabular}
 \end{table}
 
-\subsection{Contract Proposal Approval/Rejection Test Case}
 \begin{table}[H]
 	\centering
-	\caption{Test Case TC-09: Approve/Reject Contract Proposal}
+	\caption{Validation of Contract Proposal Approval and Rejection — Test Case TC-09}
 	\label{tab:tc_contract_approve}
-	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+	\begin{tabular}{|p{0.27\textwidth}|p{0.65\textwidth}|}
 		\hline
 		\textbf{Test Case ID} & TC-09 \\ \hline
 		\textbf{Brief Description} & Verify admin can approve or reject a submitted contract proposal and status is updated. \\ \hline
@@ -252,12 +254,14 @@ Each test case outlines the objective, steps, expected result, and outcome.
 	\end{tabular}
 \end{table}
 
-\subsection{Order Status Update and Tracking Test Case}
+% -------------------------
+\subsection{Order Management Test Case}
+
 \begin{table}[H]
 	\centering
-	\caption{Test Case TC-10: Order Status Update and Tracking}
+	\caption{Validation of Order Status Update and Tracking — Test Case TC-10}
 	\label{tab:tc_order_tracking}
-	\begin{tabular}{p{0.27\textwidth} p{0.65\textwidth}}
+	\begin{tabular}{|p{0.27\textwidth}|p{0.65\textwidth}|}
 		\hline
 		\textbf{Test Case ID} & TC-10 \\ \hline
 		\textbf{Brief Description} & Validate order lifecycle updates and visibility in order management dashboards. \\ \hline

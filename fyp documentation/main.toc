@@ -146,17 +146,11 @@
 \contentsline {subsection}{\numberline {6.4.6}Security Testing}{65}{}%
 \contentsline {subsection}{\numberline {6.4.7}User Acceptance Testing (UAT)}{65}{}%
 \contentsline {section}{\numberline {6.5}Test Cases}{65}{}%
-\contentsline {subsection}{\numberline {6.5.1}Login Test Case (Valid Credentials)}{66}{}%
-\contentsline {subsection}{\numberline {6.5.2}Login Test Case (Invalid Credentials)}{66}{}%
-\contentsline {subsection}{\numberline {6.5.3}POS Product Listing Test Case}{67}{}%
-\contentsline {subsection}{\numberline {6.5.4}POS Add Product Test Case}{67}{}%
-\contentsline {subsection}{\numberline {6.5.5}POS Sale Transaction Test Case}{68}{}%
-\contentsline {subsection}{\numberline {6.5.6}Franchise Creation Test Case}{68}{}%
-\contentsline {subsection}{\numberline {6.5.7}City Assignment Test Case}{69}{}%
-\contentsline {subsection}{\numberline {6.5.8}Contract Creation Test Case}{69}{}%
-\contentsline {subsection}{\numberline {6.5.9}Contract Proposal Approval/Rejection Test Case}{70}{}%
-\contentsline {subsection}{\numberline {6.5.10}Order Status Update and Tracking Test Case}{70}{}%
-\contentsline {section}{\numberline {6.6}Summary}{70}{}%
+\contentsline {subsection}{\numberline {6.5.1}Login Test Case}{66}{}%
+\contentsline {subsection}{\numberline {6.5.2}POS Module Test Cases}{67}{}%
+\contentsline {subsection}{\numberline {6.5.3}Franchise and Contract Management Test Cases}{68}{}%
+\contentsline {subsection}{\numberline {6.5.4}Order Management Test Case}{70}{}%
+\contentsline {section}{\numberline {6.6}Summary}{71}{}%
 \contentsline {section}{\numberline {7.1}Conclusion}{73}{}%
 \contentsline {section}{\numberline {7.2}Limitations}{73}{}%
 \contentsline {section}{\numberline {7.3}Future Work}{73}{}%
